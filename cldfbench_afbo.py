@@ -73,22 +73,25 @@ class Dataset(BaseDataset):
             id_ = identifier[row['identifier_pk']]
             lang2id[row['language_pk']][id_['type']].append((id_['name'], id_['description']))
 
+        glangs = {l.iso: l for l in args.glottolog.api.languoids()}
         for row in self.read('language', pkmap=pk2id).values():
             id = row['id']
             iso_codes = set(i[0] for i in lang2id[row['pk']].get('iso639-3', []))
-            glottocodes = [i[0] for i in lang2id[row['pk']].get('glottolog', [])]
+            iso = list(iso_codes)[0] if len(iso_codes) == 1 else None
+            glang = glangs.get(iso) if iso else None
             md = json.loads(row['jsondata'])
             args.writer.objects['LanguageTable'].append({
                 'ID': id,
                 'Name': row['name'],
-                'ISO639P3code': list(iso_codes)[0] if len(iso_codes) == 1 else None,
-                'Glottocode': glottocodes[0] if len(glottocodes) == 1 else None,
+                'ISO639P3code': iso,
+                'Glottocode': glang.id if glang else None,
+                'Macroarea': glang.macroareas[0].name if glang and glang.macroareas else None,
                 'Latitude': row['latitude'],
                 'Longitude': row['longitude'],
                 'Genus': md['genus'],
                 'Afbo_Macroarea': md['macroarea'],
             })
-        args.writer.objects['LanguageTable'].sort(key=lambda d: d['ID'])
+        args.writer.objects['LanguageTable'].sort(key=lambda d: int(d['ID']))
 
         refs = {
             ppk: [pk2id['source'][r['source_pk']] for r in rows]
@@ -97,7 +100,7 @@ class Dataset(BaseDataset):
                 lambda d: d['pair_pk'],
             )
         }
-        for row in self.read('pair', pkmap=pk2id).values():
+        for row in self.read('pair', pkmap=pk2id, key=lambda d: int(d['id'])).values():
             args.writer.objects['donor_recipient_pairs.csv'].append({
                 'ID': row['id'],
                 'Name': row['name'],
@@ -130,7 +133,7 @@ class Dataset(BaseDataset):
             })
 
         args.writer.objects['ValueTable'].sort(
-            key=lambda d: (d['Language_ID'], d['Parameter_ID']))
+            key=lambda d: (int(d['Language_ID']), int(d['Parameter_ID'])))
 
 
     def schema(self, cldf):
@@ -138,11 +141,12 @@ class Dataset(BaseDataset):
         cldf.properties['dc:description'] = self.raw_dir.read('ABOUT.md')
 
         cldf.add_component('LanguageTable', 'Afbo_Macroarea', 'Genus')
-        cldf.add_component(
+        t = cldf.add_component(
             'ParameterTable',
             {'name': 'Representation', 'datatype': 'integer'},
             {'name': 'Count_Borrowed', 'datatype': 'integer'},
         )
+        t.common_props['dc:description'] = "Affix functions"
         t = cldf.add_table(
             'donor_recipient_pairs.csv',
             'ID',
@@ -164,4 +168,7 @@ class Dataset(BaseDataset):
         t.add_foreign_key('Donor_ID', 'languages.csv', 'ID')
         t.add_foreign_key('Recipient_ID', 'languages.csv', 'ID')
         cldf.add_columns('ValueTable', 'Pair_ID')
+        cldf.remove_columns('ValueTable', 'Code_ID', 'Comment', 'Source')
         cldf.add_foreign_key('ValueTable', 'Pair_ID', 'donor_recipient_pairs.csv', 'ID')
+        cldf['ValueTable', 'Value'].common_props['dc:description'] = \
+            "The number of borrowed affixes of a certain function from a certain donor language"

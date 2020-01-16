@@ -27,7 +27,7 @@ pk,jsondata,name,description,markup_description,id,type,lang
 26,,xno,,,xno,iso639-3,en
 27,,angl1258,,,angl1258,glottolog,en
 28,,nep,,,nep,iso639-3,en
-29,,nepa1254,,,nepa1254,glottolog,en
+29,,east1436,,,east1436,glottolog,en
 30,,fin,,,fin,iso639-3,en
 31,,finn1318,,,finn1318,glottolog,en
 32,,rit,,,rit,iso639-3,en
@@ -41,7 +41,7 @@ pk,jsondata,name,description,markup_description,id,type,lang
 40,,evn,,,evn,iso639-3,en
 41,,even1259,,,even1259,glottolog,en
 42,,nln,,,nln,iso639-3,en
-43,,dura1245,,,dura1245,glottolog,en
+43,,dura1246,,,dura1246,glottolog,en
 44,,cbk,,,cbk,iso639-3,en
 45,,chav1241,,,chav1241,glottolog,en
 46,,sce,,,sce,iso639-3,en
@@ -182,7 +182,7 @@ pk,jsondata,name,description,markup_description,id,type,lang
 189,,qxp,,,qxp,iso639-3,en
 190,,puno1238,,,puno1238,glottolog,en
 191,,gbc,,,gbc,iso639-3,en
-192,,gara1261,,,gara1261,glottolog,en
+192,,gara1260,,,gara1260,glottolog,en
 193,,rus,,,rus,iso639-3,en
 194,,russ1263,,,russ1263,glottolog,en
 195,,srp,,,srp,iso639-3,en
