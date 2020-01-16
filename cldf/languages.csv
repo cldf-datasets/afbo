@@ -1,0 +1,160 @@
+ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Afbo_Macroarea,Genus
+1,Cushitic,,-0.85,39.95,,orm,Africa,Eastern Cushitic
+10,Banjar Malay,,0.747105,115.79,banj1239,bjn,Southeast Asia & Oceania,Malayic
+100,Quechua de Puno,,-15.75,-70.13,puno1238,qxp,South America,Quechuan
+101,Karrwa,,-17.4504,137.72,gara1261,gbc,Australia & New Guinea,Garrwan
+102,Russian,,53.9195,72.3926,russ1263,rus,Eurasia,Slavic
+103,Bosnian/Croatian/Serbian,,44.3238,21.9192,serb1264,srp,Eurasia,Slavic
+104,Israeli Hebrew,,31.5,34.83,hebr1245,heb,Eurasia,Semitic
+105,Koasati,,34.83,-85.17,koas1236,cku,North America,Muskogean
+106,Kashmiri,,34,76,kash1277,kas,Eurasia,Indic
+107,Ingrian Finnish,,59.9166666666667,29.7666666666667,finn1318,fin,Eurasia,Finnic
+108,Chukchi,,68.6436,170.045,chuk1273,ckt,North America,Northern Chukotko-Kamchatkan
+109,Libyan Arabic,,22.0032,15.0014,liby1240,ayl,Africa,Semitic
+11,Central Siberian Yupik Eskimo,,63.5,-170.5,cent2128,ess,North America,Eskimo
+110,Guina‑ang Bontok,,17.08,120.92,cent2083,bnc,Southeast Asia & Oceania,Northern Philippines
+111,Western Neo‑Aramaic of Ma’lūla,,33.8441666666667,36.5466666666667,west2763,amw,Eurasia,Semitic
+112,"Carapana, Tatuyo, Wáimaja, and Yurutí",,0.92,-71.42,tatu1247,tav,South America,Tucanoan
+113,Lezgian,,41.67,47.83,lezg1247,lez,Eurasia,Lezgic
+114,Ilwana,,-0.456944444444444,39.6583333333333,ilwa1237,mlk,Africa,Bantoid
+115,German,,56.9488888888889,24.1063888888889,stan1295,deu,Eurasia,Germanic
+116,Tamil,,9,80.5,tami1289,tam,Eurasia,Southern Dravidian
+117,Komi‑Zyrian,,64.0527,54.946,komi1268,kpv,Eurasia,Finnic
+118,Azari,,37.5,47,sout2697,azb,Eurasia,Turkic
+119,Persian,,28.6593,55.1586,west2369,pes,Eurasia,Iranian
+12,Siwi,,29.17,25.5,siwi1239,siz,Africa,Berber
+120,Mongolian,,48.324,106.289,halh1238,khk,Eurasia,Mongolic
+121,Basque,,43,-3,basq1248,eus,Eurasia,Basque
+122,Aymara,,-17,-68.5,cent2142,ayr,South America,Aymaran
+123,North Swahili,,-8.25605,37.624,swah1253,swh,Africa,Bantoid
+124,Kayardild,,-17.05,139.5,kaya1319,gyd,Australia & New Guinea,Taustralia & New Guineakic
+125,Romanian,,46.3913,24.2256,roma1327,ron,Eurasia,Romance
+126,Lingala,,1.40324,19.7829,ling1263,lin,Africa,Bantoid
+127,South Swahili,,-4.02,39.43,swah1253,swh,Africa,Bantoid
+128,Resígaro,,-2.42,-71.5,resi1247,rgr,South America,Arawakan
+129,Istro‑Romanian,,45.21,14.11,istr1245,ruo,Eurasia,Romance
+13,Kalderash Romani,,45.4,20.18,vlax1238,rmy,Eurasia,Indic
+130,Ilokano,,15.9361,120.993,ilok1237,ilo,Southeast Asia & Oceania,Northern Philippines
+131,Dutch,,52,5,dutc1256,nld,Southeast Asia & Oceania,Germanic
+132,Sanskrit,,20,77,sans1269,san,Southeast Asia & Oceania,Indic
+133,Garifuna,,15.67,-88,gari1256,cab,South America,Arawakan
+134,Kurux,,22.83,85.5,kuru1302,kru,Eurasia,Northern Dravidian
+135,Northern Tajik,,38.4,70,taji1245,tgk,Eurasia,Iranian
+136,Cho’ol,,17.3,-92.4333333333333,chol1282,ctu,North America,Mayan
+137,Khanty,,65,65,khan1273,kca,Eurasia,Ugric
+138,Eastern Tucanoan languages,,0.579755,-69.5763,east2698,,North America,Tucanoan
+139,Visayan,,8.38799,124.367,bisa1268,,Southeast Asia & Oceania,Meso-Philippine
+14,Norman French,,48,2,angl1258,xno,Eurasia,Romance
+140,Nunggubuyu,,-14.2623,135.753,nung1290,nuy,Australia & New Guinea,Nunggubuyu
+141,Maltese,,35.92,14.42,malt1254,mlt,Eurasia,Semitic
+142,Assamese,,26,93,assa1263,asm,Eurasia,Indic
+143,Kurdish,,37,43,nort2641,kmr,Eurasia,Iranian
+144,Central Mexicano Nahuatl,,18.7475,-99.0702777777778,mich1245,ncl,North America,Aztecan
+145,Warembori,,-1.65941,137.566,ware1253,wsa,Southeast Asia & Oceania,Lower Mamberano
+146,Chinese of Línxìa/Hézōu,,35.6,103.216666666667,mand1415,cmn,Eurasia,Chinese
+147,Uru,,-16.75,-69,uruu1244,ure,South America,Uru-Chipaya
+148,Yucuna and Cabiyarí,,-0.76075,-71.0033,yucu1253,ycn,South America,Arawakan
+149,Tukang Besi,,-5.5,123.5,tuka1248,khc,Southeast Asia & Oceania,Sulawesi
+15,Nepali,,27.5947,87.6201,nepa1252,nep,Eurasia,Indic
+150,Ngandi,,-13.83,135,ngan1295,nid,Australia & New Guinea,Ngandi
+151,Portuguese,,42.0341,-4.18815,port1283,por,Southeast Asia & Oceania,Romance
+152,Moroccan Arabic,,34.0333333333333,-6.83333333333333,moro1292,ary,Africa,Semitic
+153,Sebjan‑Küöl Ėven,,66.4166666666667,128.416666666667,even1260,eve,Eurasia,Tungusic
+154,Sri Lanka Portuguese,,6.54,79.5,mala1544,,Eurasia,Romance
+155,Bora,,-2.91467,-68.9093,bora1263,boa,South America,Boran
+156,Spanish,,40.4414,-1.11788,stan1288,spa,North America,Romance
+157,Tibeto-Burman languages,,26.7255,89.3332,brah1260,,Eurasia,Baric
+158,Yucatec Maya,,20,-89,yuca1254,yua,North America,Mayan
+159,Quapaw,,36.9471,-94.6634,quap1242,qua,North America,Siouan
+16,Finnish,,62,25,finn1318,fin,Eurasia,Finnic
+17,Ritharngu,,-12.83,135.5,rita1239,rit,Australia & New Guinea,Pama-Nyungan
+18,Albanian,,41.33,20.83,gheg1238,aln,Eurasia,Albanian
+19,Warndarang,,-14.42,135.58,wand1263,wnd,Australia & New Guinea,Maran
+2,Kwerba Kasonaweja,,-2.25,138.5,nucl1595,kwe,Southeast Asia & Oceania,Kwerba
+20,Sadri,,23.6585,84.8114,sadr1248,sck,Eurasia,Indic
+21,Uchur Ėvenki,,56,125,even1259,evn,Eurasia,Tungusic
+22,Mexicanero de la Sierra Madre Occidental,,24.9347222222222,-104.911944444444,dura1245,nln,North America,Aztecan
+23,Chabacano,,7,122.08,chav1241,cbk,Southeast Asia & Oceania,Spanish-based
+24,Santa,,31.5,107.5,dong1285,sce,Eurasia,Mongolic
+25,Turkic,,39.8667,32.8667,turk1311,,Eurasia,Turkic
+26,Tajik,,38.8213,68.5549,taji1245,tgk,Eurasia,Iranian
+27,Yiddish,,52,23,east2295,ydd,Eurasia,Germanic
+28,Semelai,,3,103,seme1247,sza,Southeast Asia & Oceania,Aslian
+29,Kxoe languages,,-16.5905,22.5998,khoe1241,,Africa,Central Khoisan
+3,Iraqi Arabic,,33,44,meso1252,acm,Eurasia,Semitic
+30,Shua‑Tshwa,,-22.0939,20.7458,naro1249,nhr,Africa,Central Khoisan
+31,Zoquean languages,,17.2157,-93.3183,zoqu1261,,North America,Mixe-Zoque
+32,Swedish,,59.800634,17.389526,swed1254,swe,Eurasia,Germanic
+33,Cajamarca Quechua,,-7,-78.5,caja1238,qvc,South America,Quechuan
+34,Middle Mongolic,,46,105,,mon,Eurasia,Mongolic
+35,Mari,,57,48,east2328,mhr,Eurasia,Finnic
+36,Naasioi,,-6.46022,155.632,naas1242,nas,Southeast Asia & Oceania,East Bougainville
+37,Brahui,,28.5,67,brah1256,brh,Eurasia,Northern Dravidian
+38,Moroccan Berber languages,,32.7415,-2.40872,atla1275,,Africa,Berber
+39,Evenki,,53.85,108.626,even1259,evn,Eurasia,Tungusic
+4,Estonian,,59.5478,22.8209,esto1258,est,Eurasia,Finnic
+40,Manange,,28.4,84.01,mana1288,nmm,Eurasia,Bodic
+41,Danisi,,-22.5,20.5,naro1249,nhr,Africa,Central Khoisan
+42,Indonesian,,-6.17,106.75,indo1316,ind,Southeast Asia & Oceania,Malayic
+43,Latin,,41.9026,12.4502,lati1261,lat,Eurasia,Romance
+44,Ndunga-le,,2.25,21.5,ndun1249,ndt,Africa,Ubangi
+45,Hawaiian,,19.58,-155.5,hawa1245,haw,Southeast Asia & Oceania,Oceanic
+46,Sakha,,62,130,yaku1245,sah,Eurasia,Turkic
+47,G|ui‑Gǁana,,-22.67,21.75,gwii1239,gwj,Africa,Central Khoisan
+48,Kola Saami,,67,37,kild1236,sjd,Eurasia,Finnic
+49,Aramaic,,37.373,42.5192,hert1241,hrt,Eurasia,Semitic
+5,Chantyal,,28.58,83.42,chan1310,chx,Eurasia,Bodic
+50,Quechua,,-11.2132,-75.8128,nort2980,qvn,South America,Quechuan
+51,Bilin,,15.75,38.5,bili1260,byn,Africa,Central Cushitic
+52,Gurindji,,-17.0329,130.379,guri1247,gue,Australia & New Guinea,Pama-Nyungan
+53,Tibetan,,28.3681,90.1872,tibe1272,bod,Eurasia,Bodic
+54,Gurindji Kriol,,-14.83,135,guri1249,,Australia & New Guinea,English-based
+55,Lithuanian Romani,,56.23,24.03,balt1257,rml,Eurasia,Indic
+56,Makrān Baluchi,,28,62,east2304,bgp,Eurasia,Iranian
+57,Tetun Dili,,-8.58,125.7,tetu1246,tdt,Southeast Asia & Oceania,Tetun-based
+58,Tariana,,1,-69.17,tari1256,tae,North America,Arawakan
+59,Uzbek,,43.7489,59.231,nort2690,uzn,Eurasia,Turkic
+6,Kharia,,22.5,84.33,khar1287,khr,Eurasia,Munda
+60,Purepecha/Tarascan,,19.5,-101.75,pure1242,tsz,North America,Tarascan
+61,Tigre,,17.3494,38.2233,tigr1270,tig,Africa,Semitic
+62,Greek,,42.3224,24.8699,mode1248,ell,Eurasia,Greek
+63,Latvian,,56.1424,18.1685,latv1249,lav,Eurasia,Baltic
+64,English,,52,0,stan1293,eng,Southeast Asia & Oceania,Germanic
+65,Sicilian Italian,,43.0464,12.6489,sici1248,scn,Eurasia,Romance
+66,Farsi,,28.6593,55.1586,west2369,pes,Eurasia,Iranian
+67,Croatian,,44.3238,21.9192,croa1245,hrv,Eurasia,Slavic
+68,Wutun,,35.65,102.22,wutu1241,wuh,Eurasia,Chinese-based
+69,Chinese,,40.0209,116.228,mand1415,cmn,Eurasia,Chinese
+7,Megleno Romanian,,40.58,22.3,megl1237,ruq,Eurasia,Romance
+70,Sierra Popoluca,,18.33,-95.17,high1276,poi,South America,Mixe-Zoque
+71,Wayampi‑Emerillon‑Zo’é,,3.25,-52.33,waya1271,,South America,Tupi-Guarani
+72,Amuesha,,-10.5,-75.42,yane1238,ame,South America,Arawakan
+73,Copper Island Aleut,,55,166.16,medn1235,mud,Eurasia,Aleut
+74,Torau,,-6.17,155.5,tora1259,ttu,Southeast Asia & Oceania,Oceanic
+75,intermediate Proto‑Carib,,5.83772,-56.8323,cari1283,,South America,Cariban
+76,Arabic,,34,-6,nort3139,apc,Eurasia,Semitic
+77,Kormakiti,,35.25,33.5,cypr1248,acy,Eurasia,Semitic
+78,Swahili,,-8.25605,37.624,swah1253,swh,Southeast Asia & Oceania,Bantoid
+79,Carib,,5.83772,-56.8323,gali1262,car,South America,Cariban
+8,Moghol,,35,62,mogh1245,mhj,Eurasia,Mongolic
+80,Cappadocian Greek,,38.39,34.51,capp1239,cpg,Eurasia,Greek
+81,Turkish,,39,35,nucl1301,tur,Eurasia,Turkic
+82,Dagur,,48,124,daur1238,dta,Eurasia,Mongolic
+83,Middle English,,51.5072,-0.1275,midd1317,enm,Eurasia,Germanic
+84,Western Kurmanji,,38.8333333333333,43.8333333333333,nort2641,kmr,Eurasia,Iranian
+85,Kedang,,-8.25,123.75,keda1252,ksx,Southeast Asia & Oceania,Central Malayo-Polynesian
+86,Alabama and Choctaw‑Chickasaw,,35.2388888888889,-96.2397222222222,choc1276,cho,North America,Muskogean
+87,Arvanitic Albanian,,37.58,23.43,arva1236,aat,Eurasia,Albanian
+88,Akkadian,,,,akka1240,akk,Eurasia,Semitic
+89,Hindi,,25,77,hind1269,hin,Eurasia,Indic
+9,Bulgarian,,43.3646,25.047,bulg1262,bul,Eurasia,Slavic
+90,Sonqor Turkic,,34.7836111111111,47.6002777777778,nucl1301,tur,Eurasia,Turkic
+91,Sumerian,,31.32,45.95,sume1241,sux,Eurasia,Sumerian
+92,Malagasy,,-20.52,47.25,plat1254,plt,Southeast Asia & Oceania,Barito
+93,Chuvash,,55.487,47.163,chuv1255,chv,Eurasia,Turkic
+94,Hungarian,,45.8252777777778,17.8222222222222,hung1274,hun,Eurasia,Ugric
+95,Judeo‑Spanish,,41.0136111111111,28.955,ladi1251,lad,Eurasia,Romance
+96,Hasankeyf Arabic,,37.7141083333333,41.4131666666667,nort3139,apc,Eurasia,Semitic
+97,Northern Nyungic,,-33.1199,118.151,dese1234,,Australia & New Guinea,Pama-Nyungan
+98,Malay,,1.85856,103,mala1479,zlm,Southeast Asia & Oceania,Malayic
+99,Karelian,,64,32,kare1335,krl,Eurasia,Finnic

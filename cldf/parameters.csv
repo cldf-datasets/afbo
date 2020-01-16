@@ -1,0 +1,44 @@
+ID,Name,Description,Representation,Count_Borrowed
+1,comparative,,6,6
+2,superlative,,5,5
+3,adjectivizer,,19,46
+4,adverbializer,,2,2
+5,clause-level TAM,,5,9
+6,clause linking,,1,1
+7,case: dative,,4,4
+8,case: ergative,,2,2
+9,case: non-locative peripheral case,,10,20
+10,case: locative,,5,8
+11,case: comparative,,4,4
+12,gender (human),,6,11
+13,noun class (inanimate),,3,45
+14,diminutive,,16,34
+15,augmentative,,3,4
+16,definite/indefinite,,5,10
+17,topic,,2,3
+18,focus,,1,2
+19,nominalizer: miscellaneous,,16,35
+20,nominalizer: agent,,26,51
+21,nominalizer: abstract,,12,39
+22,nominalizer: social group,,7,9
+23,nominalizer: place name,,6,8
+24,number: plural,,14,27
+25,number: dual,,3,5
+26,number: singular,,1,3
+27,nominal derivation (miscellaneous),,12,50
+28,privative,,7,7
+29,possessor indexing,,1,1
+30,numeral classifier,,2,16
+31,numeral derivation: ordinals,,8,9
+32,numeral and quantifier derivation,,4,6
+33,valency: passive,,5,5
+34,valency: causative,,4,4
+35,valency: reflexive,,2,4
+36,valency: applicative,,2,2
+37,valency: reciprocal,,1,1
+38,verbal TAM,,17,51
+39,verbal derivation (miscellaneous),,9,21
+40,subject/object indexing,,10,60
+41,verbalizer,,8,11
+42,relativizer/subordinator,,4,7
+43,verbal negation,,2,2
