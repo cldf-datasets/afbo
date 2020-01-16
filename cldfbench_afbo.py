@@ -19,6 +19,20 @@ class Dataset(BaseDataset):
     def cmd_download(self, args):
         pass
 
+    def cmd_readme(self, args):
+        lines, title_found = [], False
+        for line in super().cmd_readme(args).split('\n'):
+            lines.append(line)
+            if line.startswith('# ') and not title_found:
+                title_found = True
+                lines.extend([
+                    '',
+                    "[![Build Status](https://travis-ci.org/cldf-datasets/afbo.svg?branch=master)]"
+                    "(https://travis-ci.org/cldf-datasets/afbo)"
+                ])
+        lines.extend(['', self.raw_dir.read('ABOUT.md')])
+        return '\n'.join(lines)
+
     def read(self, core, extended=False, pkmap=None, key=None):
         if not key:
             key = lambda d: int(d['pk'])
