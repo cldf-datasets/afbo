@@ -19,7 +19,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/cldf-datasets/afbo",
-            "dc:created": "3a35805"
+            "dc:created": "824e43a"
         },
         {
             "rdf:type": "prov:Entity",
