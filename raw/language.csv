@@ -137,7 +137,7 @@ pk,jsondata,id,name,description,markup_description,latitude,longitude
 100,"{""color"": ""cd661c"", ""genus"": ""Quechuan"", ""macroarea"": ""South America""}",100,Quechua de Puno,,,-15.75,-70.13
 146,"{""color"": ""ff7f24"", ""genus"": ""Chinese"", ""macroarea"": ""Eurasia""}",146,Chinese of Línxìa/Hézōu,,,35.6,103.216666666667
 95,"{""color"": ""cd661c"", ""genus"": ""Romance"", ""macroarea"": ""Eurasia""}",95,Judeo‑Spanish,,,41.0136111111111,28.955
-99,"{""color"": ""cd661c"", ""genus"": ""Finnic"", ""macroarea"": ""Eurasia""}",99,Karelien,,,64,32
+99,"{""color"": ""cd661c"", ""genus"": ""Finnic"", ""macroarea"": ""Eurasia""}",99,Karelian,,,64,32
 58,"{""color"": ""ee7620"", ""genus"": ""Arawakan"", ""macroarea"": ""North America""}",58,Tariana,,,1,-69.17
 136,"{""color"": ""ee7620"", ""genus"": ""Mayan"", ""macroarea"": ""North America""}",136,Cho’ol,,,17.3,-92.4333333333333
 111,"{""color"": ""ff7f24"", ""genus"": ""Semitic"", ""macroarea"": ""Eurasia""}",111,Western Neo‑Aramaic of Ma’lūla,,,33.8441666666667,36.5466666666667
