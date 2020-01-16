@@ -1,0 +1,160 @@
+pk,jsondata,id,name,description,markup_description,latitude,longitude
+1,"{""color"": ""ffffff"", ""genus"": ""Eastern Cushitic"", ""macroarea"": ""Africa""}",1,Cushitic,,,-0.85,39.95
+4,"{""color"": ""ffffff"", ""genus"": ""Finnic"", ""macroarea"": ""Eurasia""}",4,Estonian,,,59.5478,22.8209
+9,"{""color"": ""ffffff"", ""genus"": ""Slavic"", ""macroarea"": ""Eurasia""}",9,Bulgarian,,,43.3646,25.047
+10,"{""color"": ""ffffff"", ""genus"": ""Malayic"", ""macroarea"": ""Southeast Asia & Oceania""}",10,Banjar Malay,,,0.747105,115.79
+14,"{""color"": ""ffffff"", ""genus"": ""Romance"", ""macroarea"": ""Eurasia""}",14,Norman French,,,48,2
+15,"{""color"": ""ffffff"", ""genus"": ""Indic"", ""macroarea"": ""Eurasia""}",15,Nepali,,,27.5947,87.6201
+20,"{""color"": ""ffffff"", ""genus"": ""Indic"", ""macroarea"": ""Eurasia""}",20,Sadri,,,23.6585,84.8114
+25,"{""color"": ""ffffff"", ""genus"": ""Turkic"", ""macroarea"": ""Eurasia""}",25,Turkic,,,39.8667,32.8667
+26,"{""color"": ""ffffff"", ""genus"": ""Iranian"", ""macroarea"": ""Eurasia""}",26,Tajik,,,38.8213,68.5549
+29,"{""color"": ""ffffff"", ""genus"": ""Central Khoisan"", ""macroarea"": ""Africa""}",29,Kxoe languages,,,-16.5905,22.5998
+30,"{""color"": ""ffffff"", ""genus"": ""Central Khoisan"", ""macroarea"": ""Africa""}",30,Shua‑Tshwa,,,-22.0939,20.7458
+31,"{""color"": ""ffffff"", ""genus"": ""Mixe-Zoque"", ""macroarea"": ""North America""}",31,Zoquean languages,,,17.2157,-93.3183
+32,"{""color"": ""ffffff"", ""genus"": ""Germanic"", ""macroarea"": ""Eurasia""}",32,Swedish,,,59.800634,17.389526
+36,"{""color"": ""ffffff"", ""genus"": ""East Bougainville"", ""macroarea"": ""Southeast Asia & Oceania""}",36,Naasioi,,,-6.46022,155.632
+38,"{""color"": ""ffffff"", ""genus"": ""Berber"", ""macroarea"": ""Africa""}",38,Moroccan Berber languages,,,32.7415,-2.40872
+39,"{""color"": ""ffffff"", ""genus"": ""Tungusic"", ""macroarea"": ""Eurasia""}",39,Evenki,,,53.85,108.626
+43,"{""color"": ""ffffff"", ""genus"": ""Romance"", ""macroarea"": ""Eurasia""}",43,Latin,,,41.9026,12.4502
+49,"{""color"": ""ffffff"", ""genus"": ""Semitic"", ""macroarea"": ""Eurasia""}",49,Aramaic,,,37.373,42.5192
+50,"{""color"": ""ffffff"", ""genus"": ""Quechuan"", ""macroarea"": ""South America""}",50,Quechua,,,-11.2132,-75.8128
+159,"{""color"": ""ffffff"", ""genus"": ""Siouan"", ""macroarea"": ""North America""}",159,Quapaw,,,36.9471,-94.6634
+52,"{""color"": ""ffffff"", ""genus"": ""Pama-Nyungan"", ""macroarea"": ""Australia & New Guinea""}",52,Gurindji,,,-17.0329,130.379
+53,"{""color"": ""ffffff"", ""genus"": ""Bodic"", ""macroarea"": ""Eurasia""}",53,Tibetan,,,28.3681,90.1872
+56,"{""color"": ""ffffff"", ""genus"": ""Iranian"", ""macroarea"": ""Eurasia""}",56,Makrān Baluchi,,,28,62
+59,"{""color"": ""ffffff"", ""genus"": ""Turkic"", ""macroarea"": ""Eurasia""}",59,Uzbek,,,43.7489,59.231
+61,"{""color"": ""ffffff"", ""genus"": ""Semitic"", ""macroarea"": ""Africa""}",61,Tigre,,,17.3494,38.2233
+62,"{""color"": ""ffffff"", ""genus"": ""Greek"", ""macroarea"": ""Eurasia""}",62,Greek,,,42.3224,24.8699
+63,"{""color"": ""ffffff"", ""genus"": ""Baltic"", ""macroarea"": ""Eurasia""}",63,Latvian,,,56.1424,18.1685
+64,"{""color"": ""ffffff"", ""genus"": ""Germanic"", ""macroarea"": ""Southeast Asia & Oceania""}",64,English,,,52,0
+65,"{""color"": ""ffffff"", ""genus"": ""Romance"", ""macroarea"": ""Eurasia""}",65,Sicilian Italian,,,43.0464,12.6489
+66,"{""color"": ""ffffff"", ""genus"": ""Iranian"", ""macroarea"": ""Eurasia""}",66,Farsi,,,28.6593,55.1586
+67,"{""color"": ""ffffff"", ""genus"": ""Slavic"", ""macroarea"": ""Eurasia""}",67,Croatian,,,44.3238,21.9192
+69,"{""color"": ""ffffff"", ""genus"": ""Chinese"", ""macroarea"": ""Eurasia""}",69,Chinese,,,40.0209,116.228
+75,"{""color"": ""ffffff"", ""genus"": ""Cariban"", ""macroarea"": ""South America""}",75,intermediate Proto‑Carib,,,5.83772,-56.8323
+76,"{""color"": ""ffffff"", ""genus"": ""Semitic"", ""macroarea"": ""Eurasia""}",76,Arabic,,,34,-6
+78,"{""color"": ""ffffff"", ""genus"": ""Bantoid"", ""macroarea"": ""Southeast Asia & Oceania""}",78,Swahili,,,-8.25605,37.624
+79,"{""color"": ""ffffff"", ""genus"": ""Cariban"", ""macroarea"": ""South America""}",79,Carib,,,5.83772,-56.8323
+88,"{""color"": ""ffffff"", ""genus"": ""Semitic"", ""macroarea"": ""Eurasia""}",88,Akkadian,,,,
+89,"{""color"": ""ffffff"", ""genus"": ""Indic"", ""macroarea"": ""Eurasia""}",89,Hindi,,,25,77
+93,"{""color"": ""ffffff"", ""genus"": ""Turkic"", ""macroarea"": ""Eurasia""}",93,Chuvash,,,55.487,47.163
+97,"{""color"": ""ffffff"", ""genus"": ""Pama-Nyungan"", ""macroarea"": ""Australia & New Guinea""}",97,Northern Nyungic,,,-33.1199,118.151
+98,"{""color"": ""ffffff"", ""genus"": ""Malayic"", ""macroarea"": ""Southeast Asia & Oceania""}",98,Malay,,,1.85856,103
+101,"{""color"": ""ffffff"", ""genus"": ""Garrwan"", ""macroarea"": ""Australia & New Guinea""}",101,Karrwa,,,-17.4504,137.72
+102,"{""color"": ""ffffff"", ""genus"": ""Slavic"", ""macroarea"": ""Eurasia""}",102,Russian,,,53.9195,72.3926
+103,"{""color"": ""ffffff"", ""genus"": ""Slavic"", ""macroarea"": ""Eurasia""}",103,Bosnian/Croatian/Serbian,,,44.3238,21.9192
+108,"{""color"": ""ffffff"", ""genus"": ""Northern Chukotko-Kamchatkan"", ""macroarea"": ""North America""}",108,Chukchi,,,68.6436,170.045
+109,"{""color"": ""ffffff"", ""genus"": ""Semitic"", ""macroarea"": ""Africa""}",109,Libyan Arabic,,,22.0032,15.0014
+116,"{""color"": ""ffffff"", ""genus"": ""Southern Dravidian"", ""macroarea"": ""Eurasia""}",116,Tamil,,,9,80.5
+117,"{""color"": ""ffffff"", ""genus"": ""Finnic"", ""macroarea"": ""Eurasia""}",117,Komi‑Zyrian,,,64.0527,54.946
+119,"{""color"": ""ffffff"", ""genus"": ""Iranian"", ""macroarea"": ""Eurasia""}",119,Persian,,,28.6593,55.1586
+120,"{""color"": ""ffffff"", ""genus"": ""Mongolic"", ""macroarea"": ""Eurasia""}",120,Mongolian,,,48.324,106.289
+122,"{""color"": ""ffffff"", ""genus"": ""Aymaran"", ""macroarea"": ""South America""}",122,Aymara,,,-17,-68.5
+123,"{""color"": ""ffffff"", ""genus"": ""Bantoid"", ""macroarea"": ""Africa""}",123,North Swahili,,,-8.25605,37.624
+125,"{""color"": ""ffffff"", ""genus"": ""Romance"", ""macroarea"": ""Eurasia""}",125,Romanian,,,46.3913,24.2256
+126,"{""color"": ""ffffff"", ""genus"": ""Bantoid"", ""macroarea"": ""Africa""}",126,Lingala,,,1.40324,19.7829
+130,"{""color"": ""ffffff"", ""genus"": ""Northern Philippines"", ""macroarea"": ""Southeast Asia & Oceania""}",130,Ilokano,,,15.9361,120.993
+131,"{""color"": ""ffffff"", ""genus"": ""Germanic"", ""macroarea"": ""Southeast Asia & Oceania""}",131,Dutch,,,52,5
+132,"{""color"": ""ffffff"", ""genus"": ""Indic"", ""macroarea"": ""Southeast Asia & Oceania""}",132,Sanskrit,,,20,77
+138,"{""color"": ""ffffff"", ""genus"": ""Tucanoan"", ""macroarea"": ""North America""}",138,Eastern Tucanoan languages,,,0.579755,-69.5763
+139,"{""color"": ""ffffff"", ""genus"": ""Meso-Philippine"", ""macroarea"": ""Southeast Asia & Oceania""}",139,Visayan,,,8.38799,124.367
+140,"{""color"": ""ffffff"", ""genus"": ""Nunggubuyu"", ""macroarea"": ""Australia & New Guinea""}",140,Nunggubuyu,,,-14.2623,135.753
+143,"{""color"": ""ffffff"", ""genus"": ""Iranian"", ""macroarea"": ""Eurasia""}",143,Kurdish,,,37,43
+145,"{""color"": ""ffffff"", ""genus"": ""Lower Mamberano"", ""macroarea"": ""Southeast Asia & Oceania""}",145,Warembori,,,-1.65941,137.566
+148,"{""color"": ""ffffff"", ""genus"": ""Arawakan"", ""macroarea"": ""South America""}",148,Yucuna and Cabiyarí,,,-0.76075,-71.0033
+151,"{""color"": ""ffffff"", ""genus"": ""Romance"", ""macroarea"": ""Southeast Asia & Oceania""}",151,Portuguese,,,42.0341,-4.18815
+155,"{""color"": ""ffffff"", ""genus"": ""Boran"", ""macroarea"": ""South America""}",155,Bora,,,-2.91467,-68.9093
+128,"{""color"": ""8b4512"", ""genus"": ""Arawakan"", ""macroarea"": ""South America""}",128,Resígaro,,,-2.42,-71.5
+54,"{""color"": ""8b4512"", ""genus"": ""English-based"", ""macroarea"": ""Australia & New Guinea""}",54,Gurindji Kriol,,,-14.83,135
+73,"{""color"": ""8b4512"", ""genus"": ""Aleut"", ""macroarea"": ""Eurasia""}",73,Copper Island Aleut,,,55,166.16
+46,"{""color"": ""8b4512"", ""genus"": ""Turkic"", ""macroarea"": ""Eurasia""}",46,Sakha,,,62,130
+13,"{""color"": ""8b4512"", ""genus"": ""Indic"", ""macroarea"": ""Eurasia""}",13,Kalderash Romani,,,45.4,20.18
+153,"{""color"": ""8b4512"", ""genus"": ""Tungusic"", ""macroarea"": ""Eurasia""}",153,Sebjan‑Küöl Ėven,,,66.4166666666667,128.416666666667
+135,"{""color"": ""8b4512"", ""genus"": ""Iranian"", ""macroarea"": ""Eurasia""}",135,Northern Tajik,,,38.4,70
+42,"{""color"": ""8b4512"", ""genus"": ""Malayic"", ""macroarea"": ""Southeast Asia & Oceania""}",42,Indonesian,,,-6.17,106.75
+21,"{""color"": ""cd661c"", ""genus"": ""Tungusic"", ""macroarea"": ""Eurasia""}",21,Uchur Ėvenki,,,56,125
+83,"{""color"": ""cd661c"", ""genus"": ""Germanic"", ""macroarea"": ""Eurasia""}",83,Middle English,,,51.5072,-0.1275
+23,"{""color"": ""cd661c"", ""genus"": ""Spanish-based"", ""macroarea"": ""Southeast Asia & Oceania""}",23,Chabacano,,,7,122.08
+35,"{""color"": ""8b4512"", ""genus"": ""Finnic"", ""macroarea"": ""Eurasia""}",35,Mari,,,57,48
+51,"{""color"": ""cd661c"", ""genus"": ""Central Cushitic"", ""macroarea"": ""Africa""}",51,Bilin,,,15.75,38.5
+18,"{""color"": ""8b4512"", ""genus"": ""Albanian"", ""macroarea"": ""Eurasia""}",18,Albanian,,,41.33,20.83
+33,"{""color"": ""cd661c"", ""genus"": ""Quechuan"", ""macroarea"": ""South America""}",33,Cajamarca Quechua,,,-7,-78.5
+147,"{""color"": ""cd661c"", ""genus"": ""Uru-Chipaya"", ""macroarea"": ""South America""}",147,Uru,,,-16.75,-69
+104,"{""color"": ""cd661c"", ""genus"": ""Semitic"", ""macroarea"": ""Eurasia""}",104,Israeli Hebrew,,,31.5,34.83
+5,"{""color"": ""ee7620"", ""genus"": ""Bodic"", ""macroarea"": ""Eurasia""}",5,Chantyal,,,28.58,83.42
+80,"{""color"": ""cd661c"", ""genus"": ""Greek"", ""macroarea"": ""Eurasia""}",80,Cappadocian Greek,,,38.39,34.51
+77,"{""color"": ""cd661c"", ""genus"": ""Semitic"", ""macroarea"": ""Eurasia""}",77,Kormakiti,,,35.25,33.5
+12,"{""color"": ""cd661c"", ""genus"": ""Berber"", ""macroarea"": ""Africa""}",12,Siwi,,,29.17,25.5
+19,"{""color"": ""cd661c"", ""genus"": ""Maran"", ""macroarea"": ""Australia & New Guinea""}",19,Warndarang,,,-14.42,135.58
+133,"{""color"": ""ee7620"", ""genus"": ""Arawakan"", ""macroarea"": ""South America""}",133,Garifuna,,,15.67,-88
+17,"{""color"": ""ee7620"", ""genus"": ""Pama-Nyungan"", ""macroarea"": ""Australia & New Guinea""}",17,Ritharngu,,,-12.83,135.5
+110,"{""color"": ""ee7620"", ""genus"": ""Northern Philippines"", ""macroarea"": ""Southeast Asia & Oceania""}",110,Guina‑ang Bontok,,,17.08,120.92
+90,"{""color"": ""cd661c"", ""genus"": ""Turkic"", ""macroarea"": ""Eurasia""}",90,Sonqor Turkic,,,34.7836111111111,47.6002777777778
+150,"{""color"": ""ee7620"", ""genus"": ""Ngandi"", ""macroarea"": ""Australia & New Guinea""}",150,Ngandi,,,-13.83,135
+41,"{""color"": ""ee7620"", ""genus"": ""Central Khoisan"", ""macroarea"": ""Africa""}",41,Danisi,,,-22.5,20.5
+129,"{""color"": ""cd661c"", ""genus"": ""Romance"", ""macroarea"": ""Eurasia""}",129,Istro‑Romanian,,,45.21,14.11
+68,"{""color"": ""cd661c"", ""genus"": ""Chinese-based"", ""macroarea"": ""Eurasia""}",68,Wutun,,,35.65,102.22
+105,"{""color"": ""ff7f24"", ""genus"": ""Muskogean"", ""macroarea"": ""North America""}",105,Koasati,,,34.83,-85.17
+96,"{""color"": ""ee7620"", ""genus"": ""Semitic"", ""macroarea"": ""Eurasia""}",96,Hasankeyf Arabic,,,37.7141083333333,41.4131666666667
+154,"{""color"": ""ee7620"", ""genus"": ""Romance"", ""macroarea"": ""Eurasia""}",154,Sri Lanka Portuguese,,,6.54,79.5
+124,"{""color"": ""ff7f24"", ""genus"": ""Taustralia & New Guineakic"", ""macroarea"": ""Australia & New Guinea""}",124,Kayardild,,,-17.05,139.5
+91,"{""color"": ""ff7f24"", ""genus"": ""Sumerian"", ""macroarea"": ""Eurasia""}",91,Sumerian,,,31.32,45.95
+74,"{""color"": ""ff7f24"", ""genus"": ""Oceanic"", ""macroarea"": ""Southeast Asia & Oceania""}",74,Torau,,,-6.17,155.5
+141,"{""color"": ""ee7620"", ""genus"": ""Semitic"", ""macroarea"": ""Eurasia""}",141,Maltese,,,35.92,14.42
+6,"{""color"": ""ee7620"", ""genus"": ""Munda"", ""macroarea"": ""Eurasia""}",6,Kharia,,,22.5,84.33
+107,"{""color"": ""ee7620"", ""genus"": ""Finnic"", ""macroarea"": ""Eurasia""}",107,Ingrian Finnish,,,59.9166666666667,29.7666666666667
+156,"{""color"": ""ffffff"", ""genus"": ""Romance"", ""macroarea"": ""North America""}",156,Spanish,,,40.4414,-1.11788
+157,"{""color"": ""ffffff"", ""genus"": ""Baric"", ""macroarea"": ""Eurasia""}",157,Tibeto-Burman languages,,,26.7255,89.3332
+92,"{""color"": ""ee7620"", ""genus"": ""Barito"", ""macroarea"": ""Southeast Asia & Oceania""}",92,Malagasy,,,-20.52,47.25
+71,"{""color"": ""ff7f24"", ""genus"": ""Tupi-Guarani"", ""macroarea"": ""South America""}",71,Wayampi‑Emerillon‑Zo’é,,,3.25,-52.33
+45,"{""color"": ""ff7f24"", ""genus"": ""Oceanic"", ""macroarea"": ""Southeast Asia & Oceania""}",45,Hawaiian,,,19.58,-155.5
+48,"{""color"": ""cd661c"", ""genus"": ""Finnic"", ""macroarea"": ""Eurasia""}",48,Kola Saami,,,67,37
+84,"{""color"": ""ff7f24"", ""genus"": ""Iranian"", ""macroarea"": ""Eurasia""}",84,Western Kurmanji,,,38.8333333333333,43.8333333333333
+40,"{""color"": ""ff7f24"", ""genus"": ""Bodic"", ""macroarea"": ""Eurasia""}",40,Manange,,,28.4,84.01
+27,"{""color"": ""8b4512"", ""genus"": ""Germanic"", ""macroarea"": ""Eurasia""}",27,Yiddish,,,52,23
+7,"{""color"": ""8b4512"", ""genus"": ""Romance"", ""macroarea"": ""Eurasia""}",7,Megleno Romanian,,,40.58,22.3
+87,"{""color"": ""8b4512"", ""genus"": ""Albanian"", ""macroarea"": ""Eurasia""}",87,Arvanitic Albanian,,,37.58,23.43
+57,"{""color"": ""ff7f24"", ""genus"": ""Tetun-based"", ""macroarea"": ""Southeast Asia & Oceania""}",57,Tetun Dili,,,-8.58,125.7
+55,"{""color"": ""cd661c"", ""genus"": ""Indic"", ""macroarea"": ""Eurasia""}",55,Lithuanian Romani,,,56.23,24.03
+70,"{""color"": ""ff7f24"", ""genus"": ""Mixe-Zoque"", ""macroarea"": ""South America""}",70,Sierra Popoluca,,,18.33,-95.17
+37,"{""color"": ""ee7620"", ""genus"": ""Northern Dravidian"", ""macroarea"": ""Eurasia""}",37,Brahui,,,28.5,67
+28,"{""color"": ""cd661c"", ""genus"": ""Aslian"", ""macroarea"": ""Southeast Asia & Oceania""}",28,Semelai,,,3,103
+149,"{""color"": ""ff7f24"", ""genus"": ""Sulawesi"", ""macroarea"": ""Southeast Asia & Oceania""}",149,Tukang Besi,,,-5.5,123.5
+60,"{""color"": ""ff7f24"", ""genus"": ""Tarascan"", ""macroarea"": ""North America""}",60,Purepecha/Tarascan,,,19.5,-101.75
+2,"{""color"": ""ee7620"", ""genus"": ""Kwerba"", ""macroarea"": ""Southeast Asia & Oceania""}",2,Kwerba Kasonaweja,,,-2.25,138.5
+113,"{""color"": ""ee7620"", ""genus"": ""Lezgic"", ""macroarea"": ""Eurasia""}",113,Lezgian,,,41.67,47.83
+47,"{""color"": ""ff7f24"", ""genus"": ""Central Khoisan"", ""macroarea"": ""Africa""}",47,G|ui‑Gǁana,,,-22.67,21.75
+11,"{""color"": ""ee7620"", ""genus"": ""Eskimo"", ""macroarea"": ""North America""}",11,Central Siberian Yupik Eskimo,,,63.5,-170.5
+134,"{""color"": ""cd661c"", ""genus"": ""Northern Dravidian"", ""macroarea"": ""Eurasia""}",134,Kurux,,,22.83,85.5
+81,"{""color"": ""cd661c"", ""genus"": ""Turkic"", ""macroarea"": ""Eurasia""}",81,Turkish,,,39,35
+118,"{""color"": ""8b4512"", ""genus"": ""Turkic"", ""macroarea"": ""Eurasia""}",118,Azari,,,37.5,47
+106,"{""color"": ""8b4512"", ""genus"": ""Indic"", ""macroarea"": ""Eurasia""}",106,Kashmiri,,,34,76
+137,"{""color"": ""8b4512"", ""genus"": ""Ugric"", ""macroarea"": ""Eurasia""}",137,Khanty,,,65,65
+16,"{""color"": ""ee7620"", ""genus"": ""Finnic"", ""macroarea"": ""Eurasia""}",16,Finnish,,,62,25
+112,"{""color"": ""ff7f24"", ""genus"": ""Tucanoan"", ""macroarea"": ""South America""}",112,"Carapana, Tatuyo, Wáimaja, and Yurutí",,,0.92,-71.42
+121,"{""color"": ""8b4512"", ""genus"": ""Basque"", ""macroarea"": ""Eurasia""}",121,Basque,,,43,-3
+152,"{""color"": ""ff7f24"", ""genus"": ""Semitic"", ""macroarea"": ""Africa""}",152,Moroccan Arabic,,,34.0333333333333,-6.83333333333333
+100,"{""color"": ""cd661c"", ""genus"": ""Quechuan"", ""macroarea"": ""South America""}",100,Quechua de Puno,,,-15.75,-70.13
+146,"{""color"": ""ff7f24"", ""genus"": ""Chinese"", ""macroarea"": ""Eurasia""}",146,Chinese of Línxìa/Hézōu,,,35.6,103.216666666667
+95,"{""color"": ""cd661c"", ""genus"": ""Romance"", ""macroarea"": ""Eurasia""}",95,Judeo‑Spanish,,,41.0136111111111,28.955
+99,"{""color"": ""cd661c"", ""genus"": ""Finnic"", ""macroarea"": ""Eurasia""}",99,Karelien,,,64,32
+58,"{""color"": ""ee7620"", ""genus"": ""Arawakan"", ""macroarea"": ""North America""}",58,Tariana,,,1,-69.17
+136,"{""color"": ""ee7620"", ""genus"": ""Mayan"", ""macroarea"": ""North America""}",136,Cho’ol,,,17.3,-92.4333333333333
+111,"{""color"": ""ff7f24"", ""genus"": ""Semitic"", ""macroarea"": ""Eurasia""}",111,Western Neo‑Aramaic of Ma’lūla,,,33.8441666666667,36.5466666666667
+142,"{""color"": ""8b4512"", ""genus"": ""Indic"", ""macroarea"": ""Eurasia""}",142,Assamese,,,26,93
+22,"{""color"": ""ff7f24"", ""genus"": ""Aztecan"", ""macroarea"": ""North America""}",22,Mexicanero de la Sierra Madre Occidental,,,24.9347222222222,-104.911944444444
+158,"{""color"": ""ff7f24"", ""genus"": ""Mayan"", ""macroarea"": ""North America""}",158,Yucatec Maya,,,20,-89
+85,"{""color"": ""ff7f24"", ""genus"": ""Central Malayo-Polynesian"", ""macroarea"": ""Southeast Asia & Oceania""}",85,Kedang,,,-8.25,123.75
+3,"{""color"": ""ee7620"", ""genus"": ""Semitic"", ""macroarea"": ""Eurasia""}",3,Iraqi Arabic,,,33,44
+86,"{""color"": ""ff7f24"", ""genus"": ""Muskogean"", ""macroarea"": ""North America""}",86,Alabama and Choctaw‑Chickasaw,,,35.2388888888889,-96.2397222222222
+115,"{""color"": ""ff7f24"", ""genus"": ""Germanic"", ""macroarea"": ""Eurasia""}",115,German,,,56.9488888888889,24.1063888888889
+72,"{""color"": ""ee7620"", ""genus"": ""Arawakan"", ""macroarea"": ""South America""}",72,Amuesha,,,-10.5,-75.42
+8,"{""color"": ""cd661c"", ""genus"": ""Mongolic"", ""macroarea"": ""Eurasia""}",8,Moghol,,,35,62
+82,"{""color"": ""ee7620"", ""genus"": ""Mongolic"", ""macroarea"": ""Eurasia""}",82,Dagur,,,48,124
+94,"{""color"": ""ff7f24"", ""genus"": ""Ugric"", ""macroarea"": ""Eurasia""}",94,Hungarian,,,45.8252777777778,17.8222222222222
+24,"{""color"": ""cd661c"", ""genus"": ""Mongolic"", ""macroarea"": ""Eurasia""}",24,Santa,,,31.5,107.5
+34,"{""color"": ""cd661c"", ""genus"": ""Mongolic"", ""macroarea"": ""Eurasia""}",34,Middle Mongolic,,,46,105
+44,"{""color"": ""ee7620"", ""genus"": ""Ubangi"", ""macroarea"": ""Africa""}",44,Ndunga-le,,,2.25,21.5
+114,"{""color"": ""ee7620"", ""genus"": ""Bantoid"", ""macroarea"": ""Africa""}",114,Ilwana,,,-0.456944444444444,39.6583333333333
+127,"{""color"": ""ee7620"", ""genus"": ""Bantoid"", ""macroarea"": ""Africa""}",127,South Swahili,,,-4.02,39.43
+144,"{""color"": ""ee7620"", ""genus"": ""Aztecan"", ""macroarea"": ""North America""}",144,Central Mexicano Nahuatl,,,18.7475,-99.0702777777778
