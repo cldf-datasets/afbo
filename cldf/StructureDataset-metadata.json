@@ -16,22 +16,22 @@
     "dcat:accessURL": "https://github.com/cldf-datasets/afbo",
     "prov:wasDerivedFrom": [
         {
-            "rdf:type": "prov:Entity",
-            "dc:title": "Repository",
             "rdf:about": "https://github.com/cldf-datasets/afbo",
-            "dc:created": "824e43a"
+            "rdf:type": "prov:Entity",
+            "dc:created": "v1.0-1-g1e1722a",
+            "dc:title": "Repository"
         },
         {
-            "rdf:type": "prov:Entity",
-            "dc:title": "Glottolog",
             "rdf:about": "https://github.com/glottolog/glottolog",
-            "dc:created": "v4.1"
+            "rdf:type": "prov:Entity",
+            "dc:created": "v5.3",
+            "dc:title": "Glottolog"
         }
     ],
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.5.2"
+            "dc:description": "3.12.3"
         },
         {
             "dc:title": "python-packages",
@@ -40,13 +40,10 @@
     ],
     "rdf:ID": "afbo",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
-    "dialect": {
-        "commentPrefix": null
-    },
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 290,
+            "dc:extent": 373,
             "tableSchema": {
                 "columns": [
                     {
@@ -59,12 +56,14 @@
                         "name": "ID"
                     },
                     {
+                        "dc:extent": "singlevalued",
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#languageReference",
                         "required": true,
                         "name": "Language_ID"
                     },
                     {
+                        "dc:extent": "singlevalued",
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#parameterReference",
                         "required": true,
@@ -72,6 +71,7 @@
                     },
                     {
                         "dc:description": "The number of borrowed affixes of a certain function from a certain donor language",
+                        "dc:extent": "singlevalued",
                         "datatype": "string",
                         "null": [
                             "?",
@@ -129,7 +129,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 159,
+            "dc:extent": 188,
             "tableSchema": {
                 "columns": [
                     {
@@ -156,8 +156,8 @@
                     {
                         "datatype": {
                             "base": "decimal",
-                            "minimum": -90,
-                            "maximum": 90
+                            "minimum": "-90",
+                            "maximum": "90"
                         },
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#latitude",
                         "required": false,
@@ -166,8 +166,8 @@
                     {
                         "datatype": {
                             "base": "decimal",
-                            "minimum": -180,
-                            "maximum": 180
+                            "minimum": "-180",
+                            "maximum": "180"
                         },
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#longitude",
                         "required": false,
@@ -180,7 +180,7 @@
                         },
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#glottocode",
                         "required": false,
-                        "valueUrl": "http://glottolog.org/resource/languoid/id/{glottocode}",
+                        "valueUrl": "http://glottolog.org/resource/languoid/id/{Glottocode}",
                         "name": "Glottocode"
                     },
                     {
@@ -194,7 +194,7 @@
                     },
                     {
                         "datatype": "string",
-                        "name": "Afbo_Macroarea"
+                        "name": "Family"
                     },
                     {
                         "datatype": "string",
@@ -210,7 +210,7 @@
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
             "dc:description": "Affix functions",
-            "dc:extent": 43,
+            "dc:extent": 42,
             "tableSchema": {
                 "columns": [
                     {
@@ -235,6 +235,12 @@
                         "name": "Description"
                     },
                     {
+                        "datatype": "json",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#columnSpec",
+                        "required": false,
+                        "name": "ColumnSpec"
+                    },
+                    {
                         "datatype": "integer",
                         "name": "Representation"
                     },
@@ -250,11 +256,11 @@
             "url": "parameters.csv"
         },
         {
-            "dc:extent": 101,
+            "dc:extent": 132,
             "tableSchema": {
                 "columns": [
                     {
-                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
                         "name": "ID"
                     },
                     {
@@ -319,6 +325,9 @@
                             ]
                         }
                     }
+                ],
+                "primaryKey": [
+                    "ID"
                 ]
             },
             "url": "donor_recipient_pairs.csv"
