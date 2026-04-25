@@ -1,23 +1,22 @@
 import re
 import copy
-import json
 import pathlib
 import functools
-import itertools
 import collections
 import dataclasses
+import shutil
+import urllib.parse
 from typing import Union
 
 import bs4
 from bs4 import BeautifulSoup
-from csvw.metadata import Description
-from pycldf import Source, Sources
+from pycldf import Sources
 import simplepybtex
-from csvw.dsv import UnicodeWriter
 from pyglottolog import Glottolog as GlottologAPI
 from pyglottolog.languoids import Languoid
 from clldutils.html import HTML, literal
 from clldutils.misc import slug
+from csvw.dsv import UnicodeWriter
 
 from cldfbench import Dataset as BaseDataset
 from cldfbench import CLDFSpec
@@ -90,7 +89,7 @@ class References:
 
     def repl(self, key, sid, s):
         def link(label, srcid):
-            return '('.join('<a href="#cldf:' + srcid + '">' + s + '</a>' for s in label.split('('))
+            return '('.join('<a href="?label=' + urllib.parse.quote_plus(s) + '#cldf:' + srcid + '">' + s + '</a>' for s in label.split('('))
 
         yp = re.compile(r'[,;]\s+(?P<label>[0-9]{4}([ab])?)\s*')
         rem = s
@@ -158,7 +157,11 @@ class Glottolog:
 
     @classmethod
     def from_path(cls, p):
-        return cls(list(GlottologAPI(p).languoids()))
+        return cls.from_api(GlottologAPI(p))
+
+    @classmethod
+    def from_api(cls, api):
+        return cls(list(api.languoids()))
 
     @functools.cached_property
     def by_iso(self):
@@ -344,17 +347,20 @@ class Language:
 
     @property
     def id(self):
-        return slug(self.name)
+        return slug(self.name + ''.join(self.iso))
 
-    def as_dict(self):
+    def as_dict(self, lgmd):
+        lgmd = lgmd[(self.name, ' '.join(self.iso))]
         return dict(
             ID=self.id,
             Name=self.name,
             Family=self.family[0],
+            Family_Glottocode=self.family[1],
             Genus=self.subfamily,
-            #
-            # FIXME: get coordinates!
-            #
+            ISO639P3code=self.iso,
+            Glottocode=lgmd['glottocode'],
+            Latitude=float(lgmd['latitude']),
+            Longitude=float(lgmd['longitude']),
         )
 
     @classmethod
@@ -398,27 +404,6 @@ class Language:
 
 @dataclasses.dataclass
 class Pair:
-    """
-        t = cldf.add_table(
-            'donor_recipient_pairs.csv',
-            'ID',
-            'Name',
-            {
-                "name": "Source",
-                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
-                "datatype": {"base": "string"},
-                "separator": ";"
-            },
-            'Donor_ID',
-            'Recipient_ID',
-            {'name': 'Description', 'dc:format': 'text/html'},  # FIXME: turn this into CLDF Markdown!
-            # FIXME: add HTML docs as files linked via MediaTable!
-            'Afbo_Macroarea',
-            'Reliability',
-            {'name': 'Count_Interrelated', 'datatype': 'integer'},
-            {'name': 'Count_Borrowed', 'datatype': 'integer'},
-        )
-    """
     id: int
     macroarea: str
     donor: Language
@@ -431,14 +416,15 @@ class Pair:
     def name(self):
         return f"{self.donor.name} affixes in {self.recipient.name}"
 
-    def as_dict(self):
+    def as_dict(self, comment_file_id):
         return dict(
             ID=self.id,
             Name=self.name,
             Source=self.references,
             Donor_ID=self.donor.id,
             Recipient_ID=self.recipient.id,
-            Description=self.as_markdown(),
+            Description=comment_file_id,
+            Macroarea=self.macroarea,
             Count_Borrowed=self.count_borrowed,
         )
 
@@ -474,12 +460,11 @@ class Pair:
         md = md.replace('</ul>', '\n')
         md = md.replace('<li>', '\n- ')
         md = md.replace('</li>', '')
-        #<a href="#cldf:majt2012a">Majtényi </a>
         md = re.sub(
-            r'<a href="(?P<anchor>#cldf:[^"]+)">(?P<label>[^<]+)</a>',
+            r'<a href="(?P<anchor>\?[^#]+#cldf:[^"]+)">(?P<label>[^<]+)</a>',
             lambda m: f"[{m.group('label')}](sources.bib{m.group('anchor')})",
             md)
-        return md
+        return f'# {self.name}{md}'
 
     def write_html(self, p):
         p.write_text(f'<html><body>\n{self.as_html()}\n</body></html>')
@@ -493,24 +478,24 @@ class Dataset(BaseDataset):
         return CLDFSpec(module='StructureDataset', dir=self.cldf_dir)
 
     def cmd_download(self, args):
-        html_doc = HTMLDoc.from_path(
-            # Main table saved from word file as HTML, then ran tidy on it.
-            self.raw_dir / 'table_tidy.html',
-            Glottolog.from_path('../../glottolog/glottolog'),
-            References.from_sources(Sources.from_file(self.raw_dir / 'sources.bib')),
-        )
-        for pair in html_doc.pairs:
-            print(f"{pair.donor.name},{' '.join(pair.donor.iso)}")
-            print(f"{pair.recipient.name},{' '.join(pair.recipient.iso)}")
-            #print(pair.name)
-            #print()
-            #print(pair.as_markdown())
-            #print(pair.references)
-            #print('---')
-        #print(html_doc.refs.count_links, 'reference links inserted')
-        #print(html_doc.refs.missed, 'not referenced')
-        #html_doc.write_comments(pathlib.Path('index.html'))
-        return
+        from pycldf import Dataset
+        # Main table saved from word file as HTML, then ran tidy on it.
+        # Sources run through anystyle
+        gl = Dataset.from_metadata('../../glottolog/glottolog-cldf/cldf/cldf-metadata.json')
+        by_iso = {}
+        by_gc = {}
+        for row in gl.iter_rows('LanguageTable'):
+            if row['ISO639P3code']:
+                by_iso[row['ISO639P3code']] = row
+            by_gc[row['ID']] = row
+        with UnicodeWriter('l.csv') as w:
+            w.writerow('name iso glottocode latitude longitude'.split())
+            for row in self.etc_dir.read_csv('languages.csv', dicts=True):
+                if not row['glottocode']:
+                    assert row['iso'] in by_iso
+                    row['glottocode'] = by_iso[row['iso']]['ID']
+                gl = by_gc[row['glottocode']]
+                w.writerow([row['name'], row['iso'], row['glottocode'], gl['Latitude'], gl['Longitude']])
 
     def cmd_readme(self, args):
         lines, title_found = [], False
@@ -526,29 +511,10 @@ class Dataset(BaseDataset):
         lines.extend(['', self.raw_dir.read('ABOUT.md')])
         return '\n'.join(lines)
 
-    def read(self, core, extended=False, pkmap=None, key=None):
-        if not key:
-            key = lambda d: int(d['pk'])
-        res = collections.OrderedDict()
-        for row in sorted(self.raw_dir.read_csv('{0}.csv'.format(core), dicts=True), key=key):
-            res[row['pk']] = row
-            if pkmap is not None:
-                pkmap[core][row['pk']] = row['id']
-        if extended:
-            for row in self.raw_dir.read_csv('{0}.csv'.format(extended), dicts=True):
-                res[row['pk']].update(row)
-        return res
-
-    def itersources(self, pkmap):
-        for row in self.raw_dir.read_csv('source.csv', dicts=True):
-            del row['jsondata']
-            pkmap['source'][row.pop('pk')] = row['id']
-            row['title'] = row.pop('description')
-            row['key'] = row.pop('name')
-            yield Source(row.pop('bibtex_type'), row.pop('id'), **row)
-
     def cmd_makecldf(self, args):
         self.schema(args.writer.cldf)
+
+        lgmd = {(r['name'], r['iso']): r for r in self.etc_dir.read_csv('languages.csv', dicts=True)}
 
         args.writer.cldf.add_sources(simplepybtex.database.parse_string(
             self.raw_dir.joinpath('afbo2', 'sources.bib').read_text(encoding='utf8'),
@@ -557,40 +523,52 @@ class Dataset(BaseDataset):
 
         non_count = ('Pairs', 'Recipient language', 'Donor language', 'number of borrowed affixes')
         counts = collections.defaultdict(dict)
-        #perm.id,Pairs,Recipient language,Donor language,number of borrowed affixes,
         for row in self.raw_dir.joinpath('afbo2').read_csv('BoCatSum.csv', dicts=True):
             row = {k: v if k in non_count else int(v or '0') for k, v in row.items()}
             if row['perm.id']:
                 counts[int(row.pop('perm.id'))] = row
 
         for col in counts[1]:
-            if col in non_count:
-                continue
-            args.writer.objects['ParameterTable'].append({
-                'ID': slug(col),
-                'Name': col,
-                'Representation': len([k for k, v in counts.items() if v[col]]),
-                'Count_Borrowed': sum(v[col] for k, v in counts.items()),
-            })
+            if col not in non_count:
+                args.writer.objects['ParameterTable'].append({
+                    'ID': slug(col),
+                    'Name': col,
+                    'Representation': len([k for k, v in counts.items() if v[col]]),
+                    'Count_Borrowed': sum(v[col] for k, v in counts.items()),
+                })
 
         langs = set()
         html_doc = HTMLDoc.from_path(
-            # Main table saved from word file as HTML, then ran tidy on it.
             self.raw_dir / 'afbo2' / 'table_tidy.html',
-            Glottolog.from_path('../../glottolog/glottolog'),
-            References.from_sources(Sources.from_file(self.raw_dir / 'sources.bib')),
+            Glottolog.from_api(args.glottolog.api),
+            References.from_sources(args.writer.cldf.sources),
             counts,
         )
         recipients = {}
+        comment_dir = self.cldf_dir / 'comments'
+        comment_dir.mkdir(exist_ok=True)
         for pair in html_doc.pairs:
             recipients[pair.id] = pair.recipient.id
             if pair.donor.id not in langs:
-                args.writer.objects['LanguageTable'].append(pair.donor.as_dict())
+                args.writer.objects['LanguageTable'].append(pair.donor.as_dict(lgmd))
                 langs.add(pair.donor.id)
             if pair.recipient.id not in langs:
-                args.writer.objects['LanguageTable'].append(pair.recipient.as_dict())
+                args.writer.objects['LanguageTable'].append(pair.recipient.as_dict(lgmd))
                 langs.add(pair.recipient.id)
-            args.writer.objects['donor_recipient_pairs.csv'].append(pair.as_dict())
+
+            fid = f'{pair.id}-md'
+            p = comment_dir / f'{pair.id}.md'
+            p.write_text(pair.as_markdown(), encoding='utf8')
+            args.writer.objects['MediaTable'].append(dict(
+                ID=fid,
+                Media_Type='text/markdown',
+                Format='CLDF Markdown',
+                Description=f'Comments on {pair.name}',
+                Download_URL=str(p.relative_to(self.cldf_dir)),
+            ))
+            args.writer.objects['donor_recipient_pairs.csv'].append(pair.as_dict(fid))
+
+        args.log.info('%s reference links inserted', html_doc.refs.count_links)
 
         for pair, values in counts.items():
             lid = recipients[pair]
@@ -609,85 +587,33 @@ class Dataset(BaseDataset):
                     'Pair_ID': pair,
                 })
 
+        shutil.copy(self.dir / 'ABOUT.md', self.cldf_dir)
+        args.writer.objects['MediaTable'].append(dict(
+            ID='about',
+            Media_Type='text/markdown',
+            Format='CLDF Markdown',
+            Download_URL='ABOUT.md',
+        ))
         return
 
-        pk2id = collections.defaultdict(dict)
-        args.writer.cldf.add_sources(*list(self.itersources(pk2id)))
-
-        identifier = self.read('identifier')
-        lang2id = collections.defaultdict(lambda: collections.defaultdict(list))
-        for row in self.read('languageidentifier').values():
-            id_ = identifier[row['identifier_pk']]
-            lang2id[row['language_pk']][id_['type']].append((id_['name'], id_['description']))
-
-        glangs = {l.iso: l for l in args.glottolog.api.languoids()}
-        for row in self.read('language', pkmap=pk2id).values():
-            id = row['id']
-            iso_codes = set(i[0] for i in lang2id[row['pk']].get('iso639-3', []))
-            iso = list(iso_codes)[0] if len(iso_codes) == 1 else None
-            glang = glangs.get(iso) if iso else None
-            md = json.loads(row['jsondata'])
-            args.writer.objects['LanguageTable'].append({
-                'ID': id,
-                'Name': row['name'],
-                'ISO639P3code': iso,
-                'Glottocode': glang.id if glang else None,
-                'Macroarea': glang.macroareas[0].name if glang and glang.macroareas else None,
-                'Latitude': row['latitude'],
-                'Longitude': row['longitude'],
-                'Genus': md['genus'],
-                'Afbo_Macroarea': md['macroarea'],
-            })
-        args.writer.objects['LanguageTable'].sort(key=lambda d: int(d['ID']))
-
-        refs = {
-            ppk: [pk2id['source'][r['source_pk']] for r in rows]
-            for ppk, rows in itertools.groupby(
-                self.read('pairsource', key=lambda d: d['pair_pk']).values(),
-                lambda d: d['pair_pk'],
-            )
-        }
-        for row in self.read('pair', pkmap=pk2id, key=lambda d: int(d['id'])).values():
-            args.writer.objects['donor_recipient_pairs.csv'].append({
-                'ID': row['id'],
-                'Name': row['name'],
-                'Source': refs.get(row['pk'], []),
-                'Donor_ID': pk2id['language'][row['donor_pk']],
-                'Recipient_ID': pk2id['language'][row['recipient_pk']],
-                'Description': """<html>
-    <head>
-        <style type="text/css">
-{0}
-        </style>
-    </head>
-    <body>
-{1}
-    </body>
-</html>
-""".format(self.raw_dir.read('pair.css'), row['description'])
-            })
-
-        vsdict = self.read('valueset', pkmap=pk2id)
-        for row in self.read('value', extended='waabvalue').values():
-            vs = vsdict[row['valueset_pk']]
-            args.writer.objects['ValueTable'].append({
-                'ID': row['id'],
-                'Language_ID': pk2id['language'][vs['language_pk']],
-                'Parameter_ID': pk2id['parameter'][vs['parameter_pk']],
-                'Description': row['name'],
-                'Value': row['numeric'],
-                'Pair_ID': pk2id['pair'][row['pair_pk']],
-            })
-
-        args.writer.objects['ValueTable'].sort(
-            key=lambda d: (int(d['Language_ID']), int(d['Parameter_ID'])))
-
-
     def schema(self, cldf):
-        cldf.properties['dc:creator'] = "Frank Seifart"
-        cldf.properties['dc:description'] = self.raw_dir.read('ABOUT.md')
+        #
+        # FIXME: flesh out schema!
+        #
+        cldf.properties['dc:creator'] = "Frank Seifart and Francesco Gardani"
 
-        cldf.add_component('LanguageTable', 'Family', 'Genus')
+        cldf.properties['dc:description'] = "See ABOUT.md in this directory."
+
+        cldf.add_component(
+            'MediaTable',
+            {'name': 'Format', 'propertyUrl': 'http://purl.org/dc/terms/conformsTo'}
+        )
+        cldf.add_component(
+            'LanguageTable',
+            'Family',
+            'Family_Glottocode',
+            'Genus')
+        cldf[('LanguageTable', 'ISO639P3code')].separator = ' '
         t = cldf.add_component(
             'ParameterTable',
             {'name': 'Representation', 'datatype': 'integer'},
@@ -704,13 +630,16 @@ class Dataset(BaseDataset):
                 "datatype": {"base": "string"},
                 "separator": ";"
             },
+            {
+                "name": "Description",
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#mediaReference",
+            },
             'Donor_ID',
             'Recipient_ID',
-            {'name': 'Description', 'dc:format': 'text/html'},  # FIXME: turn this into CLDF Markdown!
-            # FIXME: add HTML docs as files linked via MediaTable!
-            'Afbo_Macroarea',
-            'Reliability',
-            {'name': 'Count_Interrelated', 'datatype': 'integer'},
+            {
+                "name": "Macroarea",
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#macroarea",
+            },
             {'name': 'Count_Borrowed', 'datatype': 'integer'},
         )
         t.add_foreign_key('Donor_ID', 'languages.csv', 'ID')

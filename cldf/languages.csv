@@ -1,189 +1,192 @@
-ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Family,Genus
-bora,Bora,,,,,,Boran,
-resigaro,Resígaro,,,,,,Arawakan,
-gurindji,Gurindji,,,,,,Pama-Nyungan,
-gurindjikriol,Gurindji Kriol,,,,,,Indo-European,Germanic
-russian,Russian,,,,,,Indo-European,Slavic
-copperislandaleut,Copper Island Aleut,,,,,,Eskimo-Aleut,
-mongolian,Mongolian,,,,,,Mongolic-Khitan,
-sakha,Sakha,,,,,,Turkic,
-romanian,Romanian,,,,,,Indo-European,Romance
-kalderashromani,Kalderash Romani,,,,,,Indo-European,Indo-Aryan
-sebjankuoleven,Sebjan-Küöl Ėven,,,,,,Tungusic,
-uzbek,Uzbek,,,,,,Turkic,
-northerntajik,Northern Tajik,,,,,,Indo-European,Iranian
-sanskrit,Sanskrit,,,,,,Indo-European,Indo-Aryan
-indonesian,Indonesian,,,,,,Austronesian,Malayo-Polynesian
-uchurevenki,Uchur Ėvenki,,,,,,Tungusic,
-normanfrench,Norman French,,,,,,Indo-European,Romance
-middleenglish,Middle English,,,,,,Indo-European,Germanic
-visayan,Visayan,,,,,,Austronesian,Central Philippine
-chabacano,Chabacano,,,,,,Indo-European,Romance
-tigre,Tigre,,,,,,Afro-Asiatic,Semitic
-bilin,Bilin,,,,,,Afro-Asiatic,Cushitic
-bosniancroatianserbian,Bosnian/Croatian/Serbian,,,,,,Indo-European,Slavic
-albanian,Albanian,,,,,,Indo-European,Albanian
-spanish,Spanish,,,,,,Indo-European,Romance
-cajamarcaquechua,Cajamarca Quechua,,,,,,Quechuan,
-aymara,Aymara,,,,,,Aymaran,
-uru,Uru,,,,,,Uru-Chipaya,
-israelihebrew,Israeli Hebrew,,,,,,Afro-Asiatic,Semitic
-dutch,Dutch,,,,,,Indo-European,Germanic
-turkish,Turkish,,,,,,Turkic,
-cappadociangreek,Cappadocian Greek,,,,,,Indo-European,Greek
-greek,Greek,,,,,,Indo-European,Greek
-cypriotarabic,Cypriot Arabic,,,,,,Afro-Asiatic,Semitic
-libyanarabic,Libyan Arabic,,,,,,Afro-Asiatic,Semitic
-siwi,Siwi,,,,,,Afro-Asiatic,Berber
-nunggubuyu,Nunggubuyu,,,,,,Gunwinyguan,
-warndarang,Warndarang,,,,,,Mangarrayi-Maran,
-carib,Carib,,,,,,Cariban,
-garifuna,Garifuna,,,,,,Arawakan,
-chuvash,Chuvash,,,,,,Turkic,
-mari,Mari,,,,,,Uralic,Mari
-nepali,Nepali,,,,,,Indo-European,Indo-Aryan
-chantyal,Chantyal,,,,,,Sino-Tibetan,Tibeto-Burman
-ngandi,Ngandi,,,,,,Gunwinyguan,
-ritharngu,Ritharngu,,,,,,Pama-Nyungan,
-ilokano,Ilokano,,,,,,Austronesian,Northern Philippine
-guinaangbontok,Guina-ang Bontok,,,,,,Austronesian,Central Cordilleran
-kurdish,Kurdish,,,,,,Indo-European,Iranian
-sonqorturkic,Sonqor Turkic,,,,,,Turkic,
-croatian,Croatian,,,,,,Indo-European,Slavic
-istroromanian,Istro-Romanian,,,,,,Indo-European,Romance
-quapaw,Quapaw,,,,,,Siouan,
-koasati,Koasati,,,,,,Muskogean,
-aramaic,Aramaic,,,,,,Afro-Asiatic,Semitic
-hasankeyfarabic,Hasankeyf Arabic,,,,,,Afro-Asiatic,Semitic
-tamil,Tamil,,,,,,Dravidian,
-srilankaportuguese,Sri Lanka Portuguese,,,,,,Indo-European,Romance
-northernnyungic,Northern Nyungic,,,,,,Pama-Nyungan,
-kayardild,Kayardild,,,,,,Tangkic,
-arabic,Arabic,,,,,,Afro-Asiatic,Semitic
-indonesianstandard,"Indonesian, standard",,,,,,Austronesian,Malayo-Polynesian
-sicilian,Sicilian,,,,,,Indo-European,Romance
-maltese,Maltese,,,,,,Afro-Asiatic,Semitic
-sadri,Sadri,,,,,,Indo-European,Indo-Aryan
-kharia,Kharia,,,,,,Austroasiatic,Munda
-estonian,Estonian,,,,,,Uralic,Finnic
-ingrianfinnish,Ingrian Finnish,,,,,,Uralic,Finnic
-swahili,Swahili,,,,,,Atlantic-Congo,Bantu
-malagasy,Malagasy,,,,,,Austronesian,Malayo-Polynesian
-banjarmalay,Banjar Malay,,,,,,Austronesian,Malayo-Polynesian
-intermediateprotocarib,intermediate Proto-Carib,,,,,,Cariban,
-protowayampiemerillonzoe,Proto Wayampi-Emerillon-Zo’é,,,,,,Tupian,
-english,English,,,,,,Indo-European,Germanic
-hawaiian,Hawaiian,,,,,,Austronesian,Oceanic
-kolasaami,Kola Saami,,,,,,Uralic,Saami
-kurmanji,Kurmanji,,,,,,Indo-European,Iranian
-manange,Manange,,,,,,Sino-Tibetan,Tibeto-Burman
-yiddish,Yiddish,,,,,,Indo-European,Germanic
-bulgarian,Bulgarian,,,,,,Indo-European,Slavic
-meglenoromanian,Megleno-Romanian,,,,,,Indo-European,Romance
-arvaniticalbanian,Arvanitic Albanian,,,,,,Indo-European,Albanian
-lithuanianromani,Lithuanian Romani,,,,,,Indo-European,Indo-Aryan
-sierrapopoluca,Sierra Popoluca,,,,,,Mixe-Zoque,
-makranbaluchi,Makrān Baluchi,,,,,,Indo-European,Iranian
-brahui,Brahui,,,,,,Dravidian,
-malay,Malay,,,,,,Austronesian,Malayo-Polynesian
-semelai,Semelai,,,,,,Austroasiatic,Mon-Khmer
-tukangbesi,Tukang Besi,,,,,,Austronesian,Malayo-Polynesian
-persian,Persian,,,,,,Indo-European,Iranian
-lezgian,Lezgian,,,,,,Nakh-Daghestanian,Lezgic
-chukchi,Chukchi,,,,,,Chukotko-Kamchatkan,
-centralsiberianyupikeskimo,Central Siberian Yupik Eskimo,,,,,,Eskimo-Aleut,
-karrwa,Karrwa,,,,,,Garrwan,
-hindi,Hindi,,,,,,Indo-European,Indo-Aryan
-kurux,Kurux,,,,,,Dravidian,
-azari,Azari,,,,,,Turkic,
-kashmiri,Kashmiri,,,,,,Indo-European,Indo-Aryan
-komizyrian,Komi-Zyrian,,,,,,Uralic,Permic
-khanty,Khanty,,,,,,Uralic,Khantic
-swedish,Swedish,,,,,,Indo-European,Germanic
-finnish,Finnish,,,,,,Uralic,Finnic
-yucunaandcabiyari,Yucuna and Cabiyarí,,,,,,Arawakan,
-carapanatatuyowaimajaandyuruti,"Carapana, Tatuyo, Wáimaja, and Yurutí",,,,,,Tucanoan,
-latin,Latin,,,,,,Indo-European,Romance
-basque,Basque,,,,,,Basque,
-moroccanberberlanguages,Moroccan Berber languages,,,,,,Afro-Asiatic,Berber
-moroccanarabic,Moroccan Arabic,,,,,,Afro-Asiatic,Semitic
-tibetan,Tibetan,,,,,,Sino-Tibetan,Tibeto-Burman
-wutun,Wutun,,,,,,Sino-Tibetan,Sinitic
-quechuadepuno,Quechua de Puno,,,,,,Quechuan,
-santa,Santa,,,,,,Mongolic-Khitan,
-chineseoflinxiahezou,Chinese of Línxìa/Hézōu,,,,,,Sino-Tibetan,Sinitic
-judeospanish,Judeo-Spanish,,,,,,Indo-European,Romance
-karelian,Karelian,,,,,,Uralic,Finnic
-easterntucanoanlanguages,Eastern Tucanoan languages,,,,,,Tucanoan,
-tariana,Tariana,,,,,,Arawakan,
-chool,Cho’ol,,,,,,Mayan,
-zoqueanlanguages,Zoquean languages,,,,,,Mixe-Zoque,
-westernneoaramaicofmalula,Western Neo-Aramaic of Ma’lūla,,,,,,Afro-Asiatic,Semitic
-tibetoburmanlanguages,Tibeto-Burman languages,,,,,,Sino-Tibetan,Tibeto-Burman
-assamese,Assamese,,,,,,Indo-European,Indo-Aryan
-portuguese,Portuguese,,,,,,Indo-European,Romance
-tetundili,Tetun Dili,,,,,,Austronesian,Malayo-Polynesian
-purepechatarascan,Purepecha/Tarascan,,,,,,Tarascan,Purepecha
-mexicanerodelasierramadreoccidental,Mexicanero de la Sierra Madre Occidental,,,,,,Uto-Aztecan,
-yucatecmaya,Yucatec Maya,,,,,,Mayan,
-iraqiarabic,Iraqi Arabic,,,,,,Afro-Asiatic,Semitic
-alabamaandchoctawchickasaw,Alabama and Choctaw-Chickasaw,,,,,,Muskogean,
-latvian,Latvian,,,,,,Indo-European,Baltic
-german,German,,,,,,Indo-European,Germanic
-quechua,Quechua,,,,,,Quechuan,
-amuesha,Amuesha,,,,,,Arawakan,
-tajik,Tajik,,,,,,Indo-European,Iranian
-moghol,Moghol,,,,,,Mongolic-Khitan,
-chinese,Chinese,,,,,,Sino-Tibetan,Sinitic
-dagur,Dagur,,,,,,Mongolic-Khitan,
-hungarian,Hungarian,,,,,,Uralic,Hungaric
-evenki,Evenki,,,,,,Tungusic,
-turkic,Turkic,,,,,,Turkic,
-middlemongolic,Middle Mongolic,,,,,,Mongolic-Khitan,
-lingala,Lingala,,,,,,Atlantic-Congo,Bantu
-ndungale,Ndunga-le,,,,,,Atlantic-Congo,Ubangian
-cushitic,Cushitic,,,,,,Afro-Asiatic,Cushitic
-ilwana,Ilwana,,,,,,Atlantic-Congo,Bantu
-northswahili,North Swahili,,,,,,Atlantic-Congo,Bantu
-southswahili,South Swahili,,,,,,Atlantic-Congo,Bantu
-nahuatl,Nahuatl,,,,,,Uto-Aztecan,
-middlelowgerman,Middle Low German,,,,,,Indo-European,Germanic
-french,French,,,,,,Indo-European,Romance
-belarusian,Belarusian,,,,,,Indo-European,Slavic
-lithuanian,Lithuanian,,,,,,Indo-European,Baltic
-centralasianturkic,Central Asian Turkic,,,,,,Turkic,
-molisanoneapolitan,Molisano Neapolitan,,,,,,Indo-European,Romance
-slavomolisano,Slavomolisano,,,,,,Indo-European,Slavic
-lombardic,Lombardic,,,,,,Indo-European,Germanic
-tuscanitalian,Tuscan Italian,,,,,,Indo-European,Romance
-italian,Italian,,,,,,Indo-European,Romance
-arbereshalbanian,Arbëresh Albanian,,,,,,Indo-European,Albanian
-chamacoco,Chamacoco,,,,,,Zamucoan,
-kadiweu,Kadiwéu,,,,,,Guaicuruan,
-nivacle,Nivaclé,,,,,,Mataguayan,
-zamucoan,Zamucoan,,,,,,Zamucoan,
-chaldeanneoaramaic,Chaldean Neo-Aramaic,,,,,,Afro-Asiatic,Semitic
-suleimaniyajewishneoaramaic,Suleimaniya Jewish Neo-Aramaic,,,,,,Afro-Asiatic,Semitic
-azeri,Azeri,,,,,,Turkic,
-udi,Udi,,,,,,Nakh-Daghestanian,Lezgic
-upperchinook,Upper Chinook,,,,,,Chinookan,
-bellacoola,Bella Coola,,,,,,Salishan,
-hebrew,Hebrew,,,,,,Afro-Asiatic,Semitic
-welsh,Welsh,,,,,,Indo-European,Celtic
-tasawaq,Tasawaq,,,,,,Songhay,
-tamajeqtuareg,Tamajeq Tuareg,,,,,,Afro-Asiatic,Berber
-polish,Polish,,,,,,Indo-European,Slavic
-tagalog,Tagalog,,,,,,Austronesian,Malayo-Polynesian
-danish,Danish,,,,,,Indo-European,Germanic
-coos,Coos,,,,,,Coosan,
-alsea,Alsea,,,,,,Alsea-Yaquina,
-mandarin,Mandarin,,,,,,Sino-Tibetan,Sinitic
-middlechinese,Middle Chinese,,,,,,Sino-Tibetan,Sinitic
-vietnamese,Vietnamese,,,,,,Austroasiatic,Vietic
-japanese,Japanese,,,,,,Japonic,
-ancientgreek,Ancient Greek,,,,,,Indo-European,Greek
-sahaptin,Sahaptin,,,,,,Sahaptian,
-baram,Baram,,,,,,Sino-Tibetan,Tibeto-Burman
-gurma,Gurma,,,,,,Atlantic-Congo,Gur
-songhayciine,Songhay Ciiné,,,,,,Songhay,
-caquinte,Caquinte,,,,,,Arawakan,
+ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Family,Family_Glottocode,Genus
+boraboa,Bora,,-2.000259,-72.257066,bora1263,boa,Boran,bora1262,
+resigarorgr,Resígaro,,-1.169535,-71.60524,resi1247,rgr,Arawakan,araw1281,
+gurindjigue,Gurindji,,-17.0329,130.379,guri1247,gue,Pama-Nyungan,pama1250,
+gurindjikriolrop,Gurindji Kriol,,-18.135,137.669,krio1252,rop,Indo-European,indo1319,Germanic
+russianrus,Russian,,59.0,50.0,russ1263,rus,Indo-European,indo1319,Slavic
+copperislandaleutale,Copper Island Aleut,,52.1228,-174.29,aleu1260,ale,Eskimo-Aleut,eski1264,
+mongoliankhk,Mongolian,,48.32397,106.28874,halh1238,khk,Mongolic-Khitan,mong1349,
+sakhasah,Sakha,,61.69744,133.98031,yaku1245,sah,Turkic,turk1311,
+romanianron,Romanian,,46.3913,24.2256,roma1327,ron,Indo-European,indo1319,Romance
+kalderashromanirmy,Kalderash Romani,,46.09,18.16,vlax1238,rmy,Indo-European,indo1319,Indo-Aryan
+sebjankuoleveneve,Sebjan-Küöl Ėven,,70.6687,130.914,even1260,eve,Tungusic,tung1282,
+uzbekuzn,Uzbek,,40.886,69.211,nort2690,uzn,Turkic,turk1311,
+northerntajiktgk,Northern Tajik,,38.8213,68.5549,taji1245,tgk,Indo-European,indo1319,Iranian
+sanskritsan,Sanskrit,,20.0,77.0,sans1269,san,Indo-European,indo1319,Indo-Aryan
+indonesianind,Indonesian,,-7.33458,109.716,indo1316,ind,Austronesian,aust1307,Malayo-Polynesian
+uchurevenkievn,Uchur Ėvenki,,61.972,94.689,even1259,evn,Tungusic,tung1282,
+normanfrenchfra,Norman French,,49.081,-0.6591,norm1245,fra,Indo-European,indo1319,Romance
+middleenglishenm,Middle English,,51.65,-1.11,midd1317,enm,Indo-European,indo1319,Germanic
+visayanceb,Visayan,,8.38799,124.367,cebu1242,ceb,Austronesian,aust1307,Central Philippine
+chabacanocbk,Chabacano,,7.435034,122.18849,chav1241,cbk,Indo-European,indo1319,Romance
+tigretig,Tigre,,17.3494,38.2233,tigr1270,tig,Afro-Asiatic,afro1255,Semitic
+bilinbyn,Bilin,,15.7833,38.3917,bili1260,byn,Afro-Asiatic,afro1255,Cushitic
+bosniancroatianserbiansrp,Bosnian/Croatian/Serbian,,44.15,18.81,sout1528,srp,Indo-European,indo1319,Slavic
+albanianaln,Albanian,,42.317,21.3837,gheg1238,aln,Indo-European,indo1319,Albanian
+spanishspa,Spanish,,40.4414,-1.11788,stan1288,spa,Indo-European,indo1319,Romance
+cajamarcaquechuaqvc,Cajamarca Quechua,,-7.09314,-78.3214,caja1238,qvc,Quechuan,quec1387,
+aymaraayr,Aymara,,-17.0,-68.5,cent2142,ayr,Aymaran,ayma1253,
+uruure,Uru,,-16.72547,-68.97119,uruu1244,ure,Uru-Chipaya,uruc1242,
+israelihebrewheb,Israeli Hebrew,,31.1056,35.0179,hebr1245,heb,Afro-Asiatic,afro1255,Semitic
+dutchnld,Dutch,,52.0,5.0,dutc1256,nld,Indo-European,indo1319,Germanic
+turkishtur,Turkish,,39.8667,32.8667,nucl1301,tur,Turkic,turk1311,
+cappadociangreekell,Cappadocian Greek,,38.36,23.13,mode1248,ell,Indo-European,indo1319,Greek
+greekell,Greek,,38.36,23.13,mode1248,ell,Indo-European,indo1319,Greek
+cypriotarabicacy,Cypriot Arabic,,35.1674,33.0943,cypr1248,acy,Afro-Asiatic,afro1255,Semitic
+libyanarabicayl,Libyan Arabic,,22.0032,15.0014,liby1240,ayl,Afro-Asiatic,afro1255,Semitic
+siwisiz,Siwi,,29.200415,25.519627,siwi1239,siz,Afro-Asiatic,afro1255,Berber
+nunggubuyunuy,Nunggubuyu,,-14.2623,135.753,nung1290,nuy,Gunwinyguan,gunw1250,
+warndarangwnd,Warndarang,,-14.2996,135.705,wand1263,wnd,Mangarrayi-Maran,mang1423,
+caribcar,Carib,,5.83772,-56.8323,gali1262,car,Cariban,cari1283,
+garifunacab,Garifuna,,15.3529,-86.9091,gari1256,cab,Arawakan,araw1281,
+chuvashchv,Chuvash,,55.48701,47.16298,chuv1255,chv,Turkic,turk1311,
+marimhr,Mari,,55.8307,48.405,east2328,mhr,Uralic,ural1272,Mari
+nepalinep,Nepali,,27.5947033333,87.6200833333,east1436,nep,Indo-European,indo1319,Indo-Aryan
+chantyalchx,Chantyal,,28.684,83.4488,chan1310,chx,Sino-Tibetan,sino1245,Tibeto-Burman
+ngandinid,Ngandi,,-12.8448,134.649,ngan1295,nid,Gunwinyguan,gunw1250,
+ritharngurit,Ritharngu,,-13.4559,135.259,rita1239,rit,Pama-Nyungan,pama1250,
+ilokanoilo,Ilokano,,15.9361,120.993,ilok1237,ilo,Austronesian,aust1307,Northern Philippine
+guinaangbontokbnc,Guina-ang Bontok,,17.09386,121.02662,bont1247,bnc,Austronesian,aust1307,Central Cordilleran
+kurdishkmr,Kurdish,,37.0,43.0,nort2641,kmr,Indo-European,indo1319,Iranian
+sonqorturkictur,Sonqor Turkic,,36.5137,48.4302,sonq1234,tur,Turkic,turk1311,
+croatianhrv,Croatian,,45.555,15.982,croa1245,hrv,Indo-European,indo1319,Slavic
+istroromanianruo,Istro-Romanian,,45.433,14.2,istr1245,ruo,Indo-European,indo1319,Romance
+quapawqua,Quapaw,,34.15,-92.0,quap1242,qua,Siouan,siou1252,
+koasaticku,Koasati,,30.4096,-92.709,koas1236,cku,Muskogean,musk1252,
+aramaichrt,Aramaic,,37.373,42.5192,hert1241,hrt,Afro-Asiatic,afro1255,Semitic
+hasankeyfarabicapc,Hasankeyf Arabic,,34.1709,36.0468,nort3139,apc,Afro-Asiatic,afro1255,Semitic
+tamiltam,Tamil,,10.520219,78.825989,tami1289,tam,Dravidian,drav1251,
+srilankaportuguesepor,Sri Lanka Portuguese,,8.5867,81.211885,mala1544,por,Indo-European,indo1319,Romance
+northernnyungicnys,Northern Nyungic,,-33.1199,118.151,nyun1247,nys,Pama-Nyungan,pama1250,
+kayardildgyd,Kayardild,,-17.0695,139.489,kaya1319,gyd,Tangkic,tang1340,
+arabicarb,Arabic,,27.9625,43.8525,stan1318,arb,Afro-Asiatic,afro1255,Semitic
+indonesianstandardind,"Indonesian, standard",,-7.33458,109.716,indo1316,ind,Austronesian,aust1307,Malayo-Polynesian
+sicilianscn,Sicilian,,37.5735,14.0414,sici1248,scn,Indo-European,indo1319,Romance
+maltesemlt,Maltese,,35.8884,14.4508,malt1254,mlt,Afro-Asiatic,afro1255,Semitic
+sadrisck,Sadri,,23.6585,84.8114,sadr1248,sck,Indo-European,indo1319,Indo-Aryan
+khariakhr,Kharia,,22.3571,84.3922,khar1287,khr,Austroasiatic,aust1305,Munda
+estonianekk,Estonian,,58.55,25.82,esto1258,ekk,Uralic,ural1272,Finnic
+ingrianfinnishfin,Ingrian Finnish,,64.7628,25.5577,finn1318,fin,Uralic,ural1272,Finnic
+swahiliswh,Swahili,,-8.25605,37.624,swah1253,swh,Atlantic-Congo,atla1278,Bantu
+malagasyplt,Malagasy,,-19.5907,47.1211,plat1254,plt,Austronesian,aust1307,Malayo-Polynesian
+banjarmalaybjn,Banjar Malay,,0.747105,115.79,banj1239,bjn,Austronesian,aust1307,Malayo-Polynesian
+intermediateprotocaribcar,intermediate Proto-Carib,,5.83772,-56.8323,gali1262,car,Cariban,cari1283,
+protowayampiemerillonzoeeme,Proto Wayampi-Emerillon-Zo’é,,3.23694,-52.3699,emer1243,eme,Tupian,tupi1275,
+englisheng,English,,53.0,-1.0,stan1293,eng,Indo-European,indo1319,Germanic
+hawaiianhaw,Hawaiian,,19.6297,-155.43,hawa1245,haw,Austronesian,aust1307,Oceanic
+kolasaamisjd,Kola Saami,,68.2158,35.8348,kild1236,sjd,Uralic,ural1272,Saami
+kurmanjikmr,Kurmanji,,37.0,43.0,nort2641,kmr,Indo-European,indo1319,Iranian
+manangenmm,Manange,,28.6416,84.0515,mana1288,nmm,Sino-Tibetan,sino1245,Tibeto-Burman
+yiddishydd,Yiddish,,51.75,19.42,east2295,ydd,Indo-European,indo1319,Germanic
+bulgarianbul,Bulgarian,,43.3646,25.047,bulg1262,bul,Indo-European,indo1319,Slavic
+meglenoromanianruq,Megleno-Romanian,,41.1174,22.3782,megl1237,ruq,Indo-European,indo1319,Romance
+arvaniticalbanianaat,Arvanitic Albanian,,38.283,23.3703,arva1236,aat,Indo-European,indo1319,Albanian
+lithuanianromanirml,Lithuanian Romani,,57.29,29.06,balt1257,rml,Indo-European,indo1319,Indo-Aryan
+sierrapopolucapoi,Sierra Popoluca,,18.198,-94.9109,high1276,poi,Mixe-Zoque,mixe1284,
+makranbaluchibcc,Makrān Baluchi,,26.0,64.0,sout2642,bcc,Indo-European,indo1319,Iranian
+brahuibrh,Brahui,,29.04,66.56,brah1256,brh,Dravidian,drav1251,
+malayzsm,Malay,,3.08896,101.699,stan1306,zsm,Austronesian,aust1307,Malayo-Polynesian
+semelaisza,Semelai,,2.82799,102.806,seme1247,sza,Austroasiatic,aust1305,Mon-Khmer
+tukangbesikhc,Tukang Besi,,-5.30994,123.578,tuka1248,khc,Austronesian,aust1307,Malayo-Polynesian
+persianpes,Persian,,32.9,53.3,west2369,pes,Indo-European,indo1319,Iranian
+lezgianlez,Lezgian,,41.5157,47.8951,lezg1247,lez,Nakh-Daghestanian,nakh1245,Lezgic
+chukchickt,Chukchi,,68.6436,170.045,chuk1273,ckt,Chukotko-Kamchatkan,chuk1271,
+centralsiberianyupikeskimoess,Central Siberian Yupik Eskimo,,63.4308,-170.272,cent2128,ess,Eskimo-Aleut,eski1264,
+karrwagbc,Karrwa,,-18.05165,137.66406999999998,garr1260,gbc,Garrwan,garr1260,
+hindihin,Hindi,,25.0,77.0,hind1269,hin,Indo-European,indo1319,Indo-Aryan
+kuruxkru,Kurux,,24.46442,86.46568,kuru1301,kru,Dravidian,drav1251,
+azariazb,Azari,,36.5137,48.4302,sout2697,azb,Turkic,turk1311,
+kashmirikas,Kashmiri,,34.166825,74.330455,kash1277,kas,Indo-European,indo1319,Indo-Aryan
+komizyriankpv,Komi-Zyrian,,64.0527,54.946,komi1268,kpv,Uralic,ural1272,Permic
+khantykca,Khanty,,62.4308,66.1218,khan1273,kca,Uralic,ural1272,Khantic
+swedishswe,Swedish,,59.800634,17.389526,swed1254,swe,Indo-European,indo1319,Germanic
+finnishfin,Finnish,,64.7628,25.5577,finn1318,fin,Uralic,ural1272,Finnic
+yucunaandcabiyariycn,Yucuna and Cabiyarí,,0.45004781836065966,-70.29323417808021,nucl1764,ycn,Arawakan,araw1281,
+carapanatatuyowaimajaandyurutitav,"Carapana, Tatuyo, Wáimaja, and Yurutí",,0.584605625,-69.810456125,east2702,tav,Tucanoan,tuca1253,
+latinlat,Latin,,41.9026,12.4502,lati1261,lat,Indo-European,indo1319,Romance
+basqueeus,Basque,,43.2787,-1.31622,basq1248,eus,Basque,basq1248,
+moroccanberberlanguagestzm,Moroccan Berber languages,,32.7415,-2.40872,cent2194,tzm,Afro-Asiatic,afro1255,Berber
+moroccanarabicary,Moroccan Arabic,,32.5,-7.5,moro1292,ary,Afro-Asiatic,afro1255,Semitic
+tibetanbod,Tibetan,,28.3681,90.1872,tibe1272,bod,Sino-Tibetan,sino1245,Tibeto-Burman
+wutunwuh,Wutun,,35.269,101.957,wutu1241,wuh,Sino-Tibetan,sino1245,Sinitic
+quechuadepunoqxp,Quechua de Puno,,-14.608,-70.2084,puno1238,qxp,Quechuan,quec1387,
+santasce,Santa,,35.66354,103.38952,dong1285,sce,Mongolic-Khitan,mong1349,
+chineseoflinxiahezoucmn,Chinese of Línxìa/Hézōu,,35.59,103.197,hezh1244,cmn,Sino-Tibetan,sino1245,Sinitic
+judeospanishlad,Judeo-Spanish,,41.205,28.6632,ladi1251,lad,Indo-European,indo1319,Romance
+kareliankrl,Karelian,,65.1691,30.8655,kare1335,krl,Uralic,ural1272,Finnic
+easterntucanoanlanguagestuo,Eastern Tucanoan languages,,0.057389423611111094,-70.14980529166667,east2698,tuo,Tucanoan,tuca1253,
+tarianatae,Tariana,,0.440205,-68.9042,tari1256,tae,Arawakan,araw1281,
+choolchf,Cho’ol,,18.1713,-92.7367,taba1266,chf,Mayan,maya1287,
+zoqueanlanguageszoc,Zoquean languages,,17.2157,-93.3183,copa1236,zoc,Mixe-Zoque,mixe1284,
+arabicapc,Arabic,,34.1709,36.0468,nort3139,apc,Afro-Asiatic,afro1255,Semitic
+westernneoaramaicofmalulaamw,Western Neo-Aramaic of Ma’lūla,,33.8162,36.484,west2763,amw,Afro-Asiatic,afro1255,Semitic
+tibetoburmanlanguagesbrx,Tibeto-Burman languages,,26.1,92.0,bodo1269,brx,Sino-Tibetan,sino1245,Tibeto-Burman
+assameseasm,Assamese,,26.0876,91.2932,assa1263,asm,Indo-European,indo1319,Indo-Aryan
+portuguesepor,Portuguese,,39.91,-8.1,port1283,por,Indo-European,indo1319,Romance
+tetundilitdt,Tetun Dili,,-8.58405,125.583,tetu1246,tdt,Austronesian,aust1307,Malayo-Polynesian
+purepechatarascantsz,Purepecha/Tarascan,,19.2467,-101.631,pure1242,tsz,Tarascan,tara1323,Purepecha
+mexicanerodelasierramadreoccidentalnln,Mexicanero de la Sierra Madre Occidental,,22.637999999999998,-104.76295,dura1246,nln,Uto-Aztecan,utoa1244,
+yucatecmayayua,Yucatec Maya,,18.7757,-88.9567,yuca1254,yua,Mayan,maya1287,
+iraqiarabicacm,Iraqi Arabic,,33.8178,43.1095,meso1252,acm,Afro-Asiatic,afro1255,Semitic
+alabamaandchoctawchickasawakzciccho,Alabama and Choctaw-Chickasaw,,31.685553333333328,-87.61149777777779,musk1252,akz cic cho,Muskogean,musk1252,
+latvianlvs,Latvian,,57.0,24.0,stan1325,lvs,Indo-European,indo1319,Baltic
+germandeu,German,,48.649,12.4676,stan1295,deu,Indo-European,indo1319,Germanic
+quechuaqva,Quechua,,-10.5138,-76.1135,ambo1252,qva,Quechuan,quec1387,
+amueshaame,Amuesha,,-10.5454,-75.315,yane1238,ame,Arawakan,araw1281,
+tajiktgk,Tajik,,38.8213,68.5549,taji1245,tgk,Indo-European,indo1319,Iranian
+mogholmhj,Moghol,,34.25,62.28,mogh1245,mhj,Mongolic-Khitan,mong1349,
+chinesecmn,Chinese,,40.0209,116.228,mand1415,cmn,Sino-Tibetan,sino1245,Sinitic
+dagurdta,Dagur,,48.0,124.0,daur1238,dta,Mongolic-Khitan,mong1349,
+hungarianhun,Hungarian,,46.9068585714,19.6555271429,hung1274,hun,Uralic,ural1272,Hungaric
+evenkievn,Evenki,,61.972,94.689,even1259,evn,Tungusic,tung1282,
+turkictur,Turkic,,39.8667,32.8667,nucl1301,tur,Turkic,turk1311,
+middlemongolicmon,Middle Mongolic,,45.77047900000001,87.25413566666667,mong1331,mon,Mongolic-Khitan,mong1349,
+lingalalin,Lingala,,-4.409174,15.28532,ling1263,lin,Atlantic-Congo,atla1278,Bantu
+ndungalendt,Ndunga-le,,2.3886,21.5755,ndun1249,ndt,Atlantic-Congo,atla1278,Ubangian
+cushiticsom,Cushitic,,4.778704,45.152856,soma1255,som,Afro-Asiatic,afro1255,Cushitic
+ilwanamlk,Ilwana,,-0.66322,39.793,ilwa1237,mlk,Atlantic-Congo,atla1278,Bantu
+northswahiliswh,North Swahili,,-8.25605,37.624,swah1253,swh,Atlantic-Congo,atla1278,Bantu
+southswahiliswh,South Swahili,,-8.25605,37.624,swah1253,swh,Atlantic-Congo,atla1278,Bantu
+nahuatlnhn,Nahuatl,,19.1248,-98.3002,cent2132,nhn,Uto-Aztecan,utoa1244,
+middlelowgermangml,Middle Low German,,53.14,9.67,midd1318,gml,Indo-European,indo1319,Germanic
+frenchfra,French,,48.0,2.0,stan1290,fra,Indo-European,indo1319,Romance
+belarusianbel,Belarusian,,53.2307,25.6038,bela1254,bel,Indo-European,indo1319,Slavic
+lithuanianlit,Lithuanian,,55.1429,23.9601,lith1251,lit,Indo-European,indo1319,Baltic
+centralasianturkictat,Central Asian Turkic,,55.79592,49.11577,tata1255,tat,Turkic,turk1311,
+molisanoneapolitannap,Molisano Neapolitan,,39.2288,16.4225,neap1235,nap,Indo-European,indo1319,Romance
+slavomolisanosvm,Slavomolisano,,41.89,14.7,slav1254,svm,Indo-European,indo1319,Slavic
+lombardiclng,Lombardic,,50.0924665,10.411591083333333,high1286,lng,Indo-European,indo1319,Germanic
+tuscanitalianita,Tuscan Italian,,43.0464,12.6489,ital1282,ita,Indo-European,indo1319,Romance
+italianita,Italian,,43.0464,12.6489,ital1282,ita,Indo-European,indo1319,Romance
+arbereshalbanianaae,Arbëresh Albanian,,38.911,16.7164,arbe1236,aae,Indo-European,indo1319,Albanian
+chamacococeg,Chamacoco,,-20.5899,-58.2005,cham1315,ceg,Zamucoan,zamu1243,
+kadiweukbc,Kadiwéu,,-19.7222,-57.582,kadi1248,kbc,Guaicuruan,guai1249,
+nivaclecag,Nivaclé,,-22.8557,-61.7606,niva1238,cag,Mataguayan,mata1289,
+zamucoanayo,Zamucoan,,-19.220055,-60.217495,ayor1240,ayo,Zamucoan,zamu1243,
+kurdishkur,Kurdish,,35.18386666666667,45.13510000000001,kurd1259,kur,Indo-European,indo1319,Iranian
+chaldeanneoaramaiccld,Chaldean Neo-Aramaic,,37.0972,43.5027,chal1275,cld,Afro-Asiatic,afro1255,Semitic
+suleimaniyajewishneoaramaichuy,Suleimaniya Jewish Neo-Aramaic,,31.9111,43.4865,sule1243,huy,Afro-Asiatic,afro1255,Semitic
+azeriazbazj,Azeri,,38.745689999999996,47.45195,azer1255,azb azj,Turkic,turk1311,
+udiudi,Udi,,40.9,47.7236,udii1243,udi,Nakh-Daghestanian,nakh1245,Lezgic
+upperchinookwac,Upper Chinook,,45.0278,-121.509,wasc1239,wac,Chinookan,chin1490,
+bellacoolablc,Bella Coola,,52.3448,-126.689,bell1243,blc,Salishan,sali1255,
+hebrewheb,Hebrew,,31.1056,35.0179,hebr1245,heb,Afro-Asiatic,afro1255,Semitic
+welshcym,Welsh,,52.0,-4.0,wels1247,cym,Indo-European,indo1319,Celtic
+tasawaqtwq,Tasawaq,,16.7814,6.92037,tasa1240,twq,Songhay,song1307,
+tamajeqtuaregthz,Tamajeq Tuareg,,16.9232,7.6743,taya1257,thz,Afro-Asiatic,afro1255,Berber
+polishpol,Polish,,51.8439,18.6255,poli1260,pol,Indo-European,indo1319,Slavic
+tagalogtgl,Tagalog,,14.06,121.747,taga1270,tgl,Austronesian,aust1307,Malayo-Polynesian
+danishdan,Danish,,54.8655,9.36284,dani1285,dan,Indo-European,indo1319,Germanic
+cooscsz,Coos,,43.4413,-124.16,coos1249,csz,Coosan,coos1248,
+alseaaes,Alsea,,44.408,-123.94,alse1251,aes,Alsea-Yaquina,alse1251,
+mandarincmn,Mandarin,,40.0209,116.228,mand1415,cmn,Sino-Tibetan,sino1245,Sinitic
+middlechineseltc,Middle Chinese,,34.27,108.9,midd1344,ltc,Sino-Tibetan,sino1245,Sinitic
+vietnamesevie,Vietnamese,,20.681188,105.774071,viet1252,vie,Austroasiatic,aust1305,Vietic
+japanesejpn,Japanese,,35.0,135.0,nucl1643,jpn,Japonic,japo1237,
+ancientgreekgrc,Ancient Greek,,39.8155,21.9129,anci1242,grc,Indo-European,indo1319,Greek
+sahaptinyak,Sahaptin,,46.2655,-120.756,yaki1237,yak,Sahaptian,saha1239,
+nepalinpi,Nepali,,28.0,85.0,nepa1254,npi,Indo-European,indo1319,Indo-Aryan
+barambrd,Baram,,28.3768,85.0584,bara1357,brd,Sino-Tibetan,sino1245,Tibeto-Burman
+gurmagux,Gurma,,11.6711,1.28489,gour1243,gux,Atlantic-Congo,atla1278,Gur
+songhayciinedje,Songhay Ciiné,,12.8554,2.41173,zarm1239,dje,Songhay,song1307,
+caquintecot,Caquinte,,-11.4812,-73.4451,caqu1242,cot,Arawakan,araw1281,
