@@ -8,7 +8,7 @@
     "dc:bibliographicCitation": "Seifart, Frank, and Gardani, Francesco. 2026. AfBo 2.0: A world-wide survey of affix borrowing. Leipzig: Max Planck Institute for Evolutionary Anthropology. DOI: 10.5281/zenodo.3610154",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#StructureDataset",
     "dc:creator": "Frank Seifart and Francesco Gardani",
-    "dc:description": "See ABOUT.md in this directory.",
+    "dc:description": "See [ABOUT.md](ABOUT.md) in this directory.",
     "dc:identifier": "https://afbo.info/",
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:source": "sources.bib",
@@ -18,7 +18,7 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/afbo",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0-3-ge53ee5a",
+            "dc:created": "v1.0-4-g8517dc1",
             "dc:title": "Repository"
         },
         {
@@ -43,6 +43,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
+            "dc:description": "Values in AfBo are counts of borrowed affixes for a particular function. These are assigned to the recipient language.",
             "dc:extent": 373,
             "tableSchema": {
                 "columns": [
@@ -129,7 +130,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 133,
+            "dc:extent": 134,
             "tableSchema": {
                 "columns": [
                     {

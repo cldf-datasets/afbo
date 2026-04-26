@@ -132,3 +132,4 @@ ID,Name,Description,Media_Type,Download_URL,Path_In_Zip,Format
 189-md,,Comments on German affixes in Hungarian,text/markdown,comments/189.md,,CLDF Markdown
 190-md,,Comments on Spanish affixes in Caquinte,text/markdown,comments/190.md,,CLDF Markdown
 about,,,text/markdown,ABOUT.md,,CLDF Markdown
+matrix,,AfBo affix count matrix,text/csv,value_matrix.csv,,

@@ -6,7 +6,7 @@
 
 **Sources**: [sources.bib](./sources.bib)
 
-See ABOUT.md in this directory.
+See [ABOUT.md](ABOUT.md) in this directory.
 
 property | value
  --- | ---
@@ -16,13 +16,15 @@ property | value
 [dc:identifier](http://purl.org/dc/terms/identifier) | https://afbo.info/
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
 [dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/cldf-datasets/afbo
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/cldf-datasets/afbo/tree/e53ee5a">cldf-datasets/afbo v1.0-3-ge53ee5a</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v5.3">Glottolog v5.3</a></li></ol>
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/cldf-datasets/afbo/tree/8517dc1">cldf-datasets/afbo v1.0-4-g8517dc1</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v5.3">Glottolog v5.3</a></li></ol>
 [prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>python</strong>: 3.12.3</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | afbo
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
 
 
 ## <a name="table-valuescsv"></a>Table [values.csv](./values.csv)
+
+Values in AfBo are counts of borrowed affixes for a particular function. These are assigned to the recipient language.
 
 property | value
  --- | ---
@@ -45,7 +47,7 @@ Name/Property | Datatype | Description
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF MediaTable](http://cldf.clld.org/v1.0/terms.rdf#MediaTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 133
+[dc:extent](http://purl.org/dc/terms/extent) | 134
 
 
 ### Columns

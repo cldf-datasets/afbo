@@ -562,11 +562,21 @@ class Dataset(BaseDataset):
             Format='CLDF Markdown',
             Download_URL='ABOUT.md',
         ))
+        shutil.copy(self.raw_dir / 'BoCatSum.csv', self.cldf_dir / 'value_matrix.csv')
+        args.writer.objects['MediaTable'].append(dict(
+            ID='matrix',
+            Media_Type='text/csv',
+            Download_URL='value_matrix.csv',
+            Description='AfBo affix count matrix',
+        ))
         return
 
     def schema(self, cldf):
         cldf.properties['dc:creator'] = "Frank Seifart and Francesco Gardani"
-        cldf.properties['dc:description'] = "See ABOUT.md in this directory."
+        cldf.properties['dc:description'] = "See [ABOUT.md](ABOUT.md) in this directory."
+        cldf['ValueTable'].common_props['dc:description'] = \
+            ("Values in AfBo are counts of borrowed affixes for a particular function. These are "
+             "assigned to the recipient language.")
 
         cldf.add_component(
             'MediaTable',
