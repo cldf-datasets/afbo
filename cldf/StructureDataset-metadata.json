@@ -18,7 +18,7 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/afbo",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0-2-gef63aad",
+            "dc:created": "v1.0-3-ge53ee5a",
             "dc:title": "Repository"
         },
         {
@@ -319,6 +319,7 @@
             "url": "parameters.csv"
         },
         {
+            "dc:description": "Pairs of languages (or languoids) between which affix borrowings are observed.",
             "dc:extent": 132,
             "tableSchema": {
                 "columns": [
@@ -327,7 +328,7 @@
                         "name": "ID"
                     },
                     {
-                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
                         "name": "Name"
                     },
                     {
@@ -337,6 +338,7 @@
                         "name": "Source"
                     },
                     {
+                        "dc:description": "The referenced CLDF Markdown file describes the borrowed affixes.",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#mediaReference",
                         "name": "Description"
                     },

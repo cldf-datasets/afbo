@@ -8,16 +8,13 @@ import shutil
 import urllib.parse
 from typing import Union
 
-import bs4
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 from pycldf import Sources
 import simplepybtex
 from pyglottolog import Glottolog as GlottologAPI
 from pyglottolog.languoids import Languoid
 from clldutils.html import HTML, literal
 from clldutils.misc import slug
-from csvw.dsv import UnicodeWriter
-
 from cldfbench import Dataset as BaseDataset
 from cldfbench import CLDFSpec
 
@@ -216,7 +213,7 @@ class HTMLDoc:
                 a.extract()
         text = []
         for c in p.contents:
-            if isinstance(c, bs4.Tag):
+            if isinstance(c, Tag):
                 if c.name in ('a', 'u'):
                     if c.name == 'u':  # Something underlined signals the affix group headers.
                         has_u = True
@@ -233,7 +230,7 @@ class HTMLDoc:
         # Turn references into links in the text representation:
         r, refs = self.refs.link(t)
         # Now parse the text into soup again:
-        e = bs4.BeautifulSoup(r).html.body
+        e = BeautifulSoup(r).html.body
         p.clear()
         for ee in e:
             p.append(copy.copy(ee))
@@ -478,38 +475,9 @@ class Dataset(BaseDataset):
         return CLDFSpec(module='StructureDataset', dir=self.cldf_dir)
 
     def cmd_download(self, args):
-        from pycldf import Dataset
         # Main table saved from word file as HTML, then ran tidy on it.
         # Sources run through anystyle
-        gl = Dataset.from_metadata('../../glottolog/glottolog-cldf/cldf/cldf-metadata.json')
-        by_iso = {}
-        by_gc = {}
-        for row in gl.iter_rows('LanguageTable'):
-            if row['ISO639P3code']:
-                by_iso[row['ISO639P3code']] = row
-            by_gc[row['ID']] = row
-        with UnicodeWriter('l.csv') as w:
-            w.writerow('name iso glottocode latitude longitude'.split())
-            for row in self.etc_dir.read_csv('languages.csv', dicts=True):
-                if not row['glottocode']:
-                    assert row['iso'] in by_iso
-                    row['glottocode'] = by_iso[row['iso']]['ID']
-                gl = by_gc[row['glottocode']]
-                w.writerow([row['name'], row['iso'], row['glottocode'], gl['Latitude'], gl['Longitude']])
-
-    def cmd_readme(self, args):
-        lines, title_found = [], False
-        for line in super().cmd_readme(args).split('\n'):
-            lines.append(line)
-            if line.startswith('# ') and not title_found:
-                title_found = True
-                lines.extend([
-                    '',
-                    "[![Build Status](https://travis-ci.org/cldf-datasets/afbo.svg?branch=master)]"
-                    "(https://travis-ci.org/cldf-datasets/afbo)"
-                ])
-        lines.extend(['', self.raw_dir.read('ABOUT.md')])
-        return '\n'.join(lines)
+        pass
 
     def cmd_makecldf(self, args):
         self.schema(args.writer.cldf)
@@ -517,13 +485,13 @@ class Dataset(BaseDataset):
         lgmd = {(r['name'], r['iso']): r for r in self.etc_dir.read_csv('languages.csv', dicts=True)}
 
         args.writer.cldf.add_sources(simplepybtex.database.parse_string(
-            self.raw_dir.joinpath('afbo2', 'sources.bib').read_text(encoding='utf8'),
+            self.raw_dir.joinpath('sources.bib').read_text(encoding='utf8'),
             bib_format='bibtex',
         ))
 
         non_count = ('Pairs', 'Recipient language', 'Donor language', 'number of borrowed affixes')
         counts = collections.defaultdict(dict)
-        for row in self.raw_dir.joinpath('afbo2').read_csv('BoCatSum.csv', dicts=True):
+        for row in self.raw_dir.read_csv('BoCatSum.csv', dicts=True):
             row = {k: v if k in non_count else int(v or '0') for k, v in row.items()}
             if row['perm.id']:
                 counts[int(row.pop('perm.id'))] = row
@@ -539,7 +507,7 @@ class Dataset(BaseDataset):
 
         langs = set()
         html_doc = HTMLDoc.from_path(
-            self.raw_dir / 'afbo2' / 'table_tidy.html',
+            self.raw_dir / 'table_tidy.html',
             Glottolog.from_api(args.glottolog.api),
             References.from_sources(args.writer.cldf.sources),
             counts,
@@ -597,11 +565,7 @@ class Dataset(BaseDataset):
         return
 
     def schema(self, cldf):
-        #
-        # FIXME: flesh out schema!
-        #
         cldf.properties['dc:creator'] = "Frank Seifart and Francesco Gardani"
-
         cldf.properties['dc:description'] = "See ABOUT.md in this directory."
 
         cldf.add_component(
@@ -612,7 +576,8 @@ class Dataset(BaseDataset):
             'LanguageTable',
             'Family',
             'Family_Glottocode',
-            'Genus')
+            'Genus',
+        )
         cldf[('LanguageTable', 'ISO639P3code')].separator = ' '
         t = cldf.add_component(
             'ParameterTable',
@@ -623,7 +588,7 @@ class Dataset(BaseDataset):
         t = cldf.add_table(
             'donor_recipient_pairs.csv',
             {'name': 'ID', "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id"},
-            'Name',
+            {'name': 'Name', "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name"},
             {
                 "name": "Source",
                 "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
@@ -632,6 +597,7 @@ class Dataset(BaseDataset):
             },
             {
                 "name": "Description",
+                "dc:description": "The referenced CLDF Markdown file describes the borrowed affixes.",
                 "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#mediaReference",
             },
             'Donor_ID',
@@ -642,6 +608,8 @@ class Dataset(BaseDataset):
             },
             {'name': 'Count_Borrowed', 'datatype': 'integer'},
         )
+        t.common_props['dc:description'] = \
+            "Pairs of languages (or languoids) between which affix borrowings are observed."
         t.add_foreign_key('Donor_ID', 'languages.csv', 'ID')
         t.add_foreign_key('Recipient_ID', 'languages.csv', 'ID')
         cldf.add_columns('ValueTable', 'Pair_ID')

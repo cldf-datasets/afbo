@@ -1,0 +1,27 @@
+{
+    "creators": [
+        {
+            "name": "Frank Seifart"
+        },
+        {
+            "name": "Francesco Gardana"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Robert Forkel",
+            "type": "DataCurator"
+        }
+    ],
+    "title": "AfBo 2.0: A world-wide survey of affix borrowing",
+    "access_right": "open",
+    "keywords": [
+        "cldf:StructureDataset",
+        "linguistics"
+    ],
+    "upload_type": "dataset",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Seifart, Frank, and Gardani, Francesco. 2026. AfBo 2.0: A world-wide survey of affix borrowing. Leipzig: Max Planck Institute for Evolutionary Anthropology. DOI: 10.5281/zenodo.3610154</p>\n</blockquote>",
+    "license": {
+        "id": "CC-BY-4.0"
+    }
+}
