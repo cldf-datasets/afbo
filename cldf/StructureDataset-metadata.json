@@ -18,7 +18,7 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/afbo",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0-4-g8517dc1",
+            "dc:created": "v1.0-6-g5e533a0",
             "dc:title": "Repository"
         },
         {

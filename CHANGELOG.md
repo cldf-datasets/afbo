@@ -18,35 +18,6 @@ Indonesian affixes in Kedang	| 137
 
 ### II. added:
 
-FS:
-
-Language pair |	perm.id
---- | ---
-Ancient Greek affixes in Latin	| 183
-Sahaptin affixes in Upper Chinook	| 184
-Nepali affixes in Baram	| 185
-English affixes in German	| 186
-Gurma affixes in Songhay	| 187
-German affixes in English	| 188
-German affixes in Hungarian	| 189
-Spanish affixes in Caquinte	| 190
-
-TT:
-
-Language pair |	perm.id
---- | ---
-English affixes in Spanish	| 173
-Spanish affixes in Tagalog	| 174
-Middle Low German affixes in Danish	| 175
-Coos affixes in Alsea	| 176
-English affixes in Mandarin	| 177
-English affixes in Tagalog	| 178
-French affixes in Turkish	| 179
-Middle Chinese affixes in Vietnamese	| 180
-Middle Chinese affixes in Japanese	| 181
-English affixes in Japanese	| 182
-
-NB:
 
 Language pair |	perm.id
 --- | ---
@@ -70,35 +41,42 @@ Hebrew affixes in Yiddish	| 169
 English affixes in Welsh	| 170
 Tasawaq affixes in Tamajeq Tuareg	| 171
 German affixes in Polish	| 172
+English affixes in Spanish	| 173
+Spanish affixes in Tagalog	| 174
+Middle Low German affixes in Danish	| 175
+Coos affixes in Alsea	| 176
+English affixes in Mandarin	| 177
+English affixes in Tagalog	| 178
+French affixes in Turkish	| 179
+Middle Chinese affixes in Vietnamese	| 180
+Middle Chinese affixes in Japanese	| 181
+English affixes in Japanese	| 182
+Ancient Greek affixes in Latin	| 183
+Sahaptin affixes in Upper Chinook	| 184
+Nepali affixes in Baram	| 185
+English affixes in German	| 186
+Gurma affixes in Songhay	| 187
+German affixes in English	| 188
+German affixes in Hungarian	| 189
+Spanish affixes in Caquinte	| 190
+
 
 ### III. modified:
 
-FS:
-
 Language pair |	perm.id
 --- | ---
-Kurdish affixes in Sonqor Turkic |	33
-Persian affixes in Turkish 	| 107
-Nepali affixes in Chantyal	| 28
-Latin affixes in Basque	| 113
-Chuvash affixes in Mari	| 27
 Uzbek affixes in Northern Tajik	| 08
-Nepali affixes in Manange	| 83
-Visayan affixes in Chabacano	| 13
-
-TT:
-
-Language pair |	perm.id
---- | ---
 Sanskrit affixes in Indonesian	| 10
+Visayan affixes in Chabacano	| 13
 Dutch affixes in Indonesian	| 19
-Sicilian affixes in Maltese	| 67
-
-NB:
-
-Language pair |	perm.id
---- | ---
 Turkish affixes in Albanian	| 25
+Chuvash affixes in Mari	| 27
+Nepali affixes in Chantyal	| 28
+Kurdish affixes in Sonqor Turkic |	33
 Croatian affixes in Istro Romanian	| 37
+Sicilian affixes in Maltese	| 67
+Nepali affixes in Manange	| 83
 Bulgarian affixes in Megleno Romanian	| 87
 Greek affixes in Arvanitic Albanian	| 88
+Persian affixes in Turkish 	| 107
+Latin affixes in Basque	| 113

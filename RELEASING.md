@@ -12,6 +12,7 @@
   ```shell
   pip install pytest-cldf
   pytest
+  cldf validate cldf --with-cldf-markdown
   ```
 
 - Commit all changes, tag the release, push code and tags
