@@ -461,6 +461,17 @@ class Pair:
             r'<a href="(?P<anchor>\?[^#]+#cldf:[^"]+)">(?P<label>[^<]+)</a>',
             lambda m: f"[{m.group('label')}](sources.bib{m.group('anchor')})",
             md)
+        md = re.sub(r'_-__(?P<text>\w+)_', lambda m: f"_-{m.group('text')}_", md)
+        md = re.sub(
+            r'\[(?P<text>[^]]+)](?P<next>[^(])',
+            lambda m: f"［{m.group('text')}］{m.group('next')}",
+            md)
+        md = md.replace(" ‘_", "_ ‘")
+        md = md.replace('____', '**')
+        for line in md.split('\n'):
+            if re.search(r'\[[^]]+][^(]', line):
+                print('---', self.id)
+                print(line)
         return f'# {self.name}{md}'
 
     def write_html(self, p):
