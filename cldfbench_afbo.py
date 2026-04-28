@@ -466,8 +466,27 @@ class Pair:
             r'\[(?P<text>[^]]+)](?P<next>[^(])',
             lambda m: f"［{m.group('text')}］{m.group('next')}",
             md)
+        md2 = []
+        p = re.compile(r'_([^\s_]+)(__[^\s_]+)+_')
+        for line in md.split('\n'):
+            line2 = line
+            while p.search(line2):
+                line2 = p.sub(
+                    lambda m: m.string[m.start():m.end()].replace('__', ''),
+                    line2)
+            md2.append(line2)
+        md = '\n'.join(md2)
         md = md.replace(" ‘_", "_ ‘")
         md = md.replace('____', '**')
+        for k, v in {
+            '_t__onx ': '_tonx ',
+            'ny__a korne__': 'nya korne',
+            '_‘adjectivizer__’': '_‘adjectivizer’',
+            '_dʲɯííʃikó__ ‘hausai_ palm’': '_dʲɯííʃikó_ ‘hausai palm’',
+            '_thũ__-nu la-g__ə__y a-th__ũ_': '_thũ-nu la-gəy a-thũ_',
+            '_-__ṱu ~_': '_-ṱu_ ~',
+        }.items():
+            md = md.replace(k, v)
         for line in md.split('\n'):
             if re.search(r'\[[^]]+][^(]', line):
                 print('---', self.id)
